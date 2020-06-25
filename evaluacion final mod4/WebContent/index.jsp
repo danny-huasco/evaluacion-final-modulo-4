@@ -1,15 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html>
-	<head>
+<html lang="es">
+	<head>		
 		<meta charset="ISO-8859-1">
-		<title>Insert title here</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
 	</head>
 	<body>
-		<form action="" method="post">
-			<textarea name="caja" id="kaja" cols="30" rows="10"></textarea>
-			<button type="submit">agregar</button>
-		</form>
-	</body>
+	<!-- menu de cabecera -->
+	<!-- cuerpo de la pagina -->
+	<!-- footer -->
+		
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
 </html>
