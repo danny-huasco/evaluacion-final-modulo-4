@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -12,41 +13,40 @@
 <body class="bg-light">
 
 <h1 class="display-4 p-2 font">Formulario Registro de Asesorías</h1>
-  <form action="Asesoria" method="post" class="form pt-3">
+  <form action="CrearAsesoria" method="post" class="form pt-3">
   	<table class="table-bordered">
        	<tr>
             <td class="p-3">
             <label>ID Asesoría:</label>
-            <input type="text" name="IDAsesoria" placeholder="Ingresar ID Asesoría">&nbsp;
+            <input type="numeric" name="idasesoria" placeholder="Ingresar ID Asesoría">&nbsp;
             <label>Fecha: </label>
             <input type="date" name="fecha" placeholder="dd-mm-aaaa">
             <br><br>
             <label>ID Visitas:</label>
-            <input type="text" name="IDVisita" placeholder="Ingresar ID Visitas">
+            <input type="numeric" name="visitaid" placeholder="Ingresar ID Visitas">
             <br><br>     
             <label>Detalle: </label><br>
-            <textarea name="Detalle" rows="5" cols="60" placeholder="Ingresar detalle de la asesoría con un máximo hasta 500 caracteres"></textarea>
+            <textarea name="detalle" rows="5" cols="60" placeholder="Ingresar detalle de la asesoría con un máximo hasta 500 caracteres"></textarea>
             <br>
             <label>Gestión: </label><br>
-            <textarea name="Gestion" rows="5" cols="60" placeholder="Ingresar gestión de la asesoría con un máximo hasta 500 caracteres"></textarea>
+            <textarea name="gestion" rows="5" cols="60" placeholder="Ingresar gestión de la asesoría con un máximo hasta 500 caracteres"></textarea>
             <br>
             <label>Propuestas: </label><br>
-            <textarea name="Propuestas" rows="5" cols="60" placeholder="hasta 500 caracteres"></textarea>
+            <textarea name="propuestas" rows="5" cols="60" placeholder="hasta 500 caracteres"></textarea>
             <br>
             <label>Asesoria Especial: </label>&nbsp;
             <div class="form-check-inline">
                 <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="Asesoria">Sí
+                  <input type="radio" class="form-check-input" name="especial">Sí
                 </label>
             </div>
             <div class="form-check-inline">
                 <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="Asesoria">No
+                  <input type="radio" class="form-check-input" name="especial">No
                 </label>
             </div>
             <br>
-            <input type="submit" value="Crear Asesoría" class="btn btn-outline-primary"
-            formaction="${pageContext.request.contextPath}/Asesoria"/>
+            <input type="submit" value="Crear asesoría" class="btn btn-outline-primary"/>
             </td>
         </tr>
     </table>
