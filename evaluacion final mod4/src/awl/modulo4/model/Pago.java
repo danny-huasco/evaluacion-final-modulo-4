@@ -21,6 +21,13 @@ public class Pago {
 
 
 
+	public Pago() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+
 	public int getIdpago() {
 		return idpago;
 	}
