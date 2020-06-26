@@ -17,45 +17,45 @@
     <div class="container text-center">
     	<h1 class="display-4">Ingrese los datos solicitados</h1>
     	<br /><br />
-    	<form action="..." method="post">
+    	<form action="IngresarMejora" method="post">
 	    	<div class="input-group mb-3">
 			  <div class="input-group-prepend">
 			    <span class="input-group-text" id="basic-addon1">ID Cliente</span>
 			  </div>
-			  <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+			  <input type="text" id="idCliente" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
 			</div>
 			<br />
 	    	<div class="input-group mb-3">
 			  <div class="input-group-prepend">
 			    <span class="input-group-text" id="basic-addon1">fecha</span>
 			  </div>
-			  <input type="text" class="form-control" placeholder="dd-mm-yyyy" aria-label="Username" aria-describedby="basic-addon1">
+			  <input type="text" id="fecha" class="form-control" placeholder="dd-mm-yyyy" aria-label="Username" aria-describedby="basic-addon1">
 			</div>
 			<br />
 			<div class="input-group mb-3">
 			  <div class="input-group-prepend">
 			    <span class="input-group-text" id="basic-addon1">Motivo</span>
 			  </div>
-			  <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+			  <input type="text" id="motivo" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
 			</div>
 			<br />
 			<div class="input-group">
 	  			<div class="input-group-prepend">
 	    			<span class="input-group-text">Actividades</span>
 	  			</div>
-	  			<textarea class="form-control" aria-label="actividades"></textarea>
+	  			<textarea class="form-control" id="actividades" aria-label="actividades"></textarea>
 			</div>
 			<br /><br />
 	    	<div class="form-check form-check-inline">
-			  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+			  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">
 			  <label class="form-check-label" for="inlineRadio1">realizada</label>
 			</div>
 			<div class="form-check form-check-inline">
-			  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+			  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">
 			  <label class="form-check-label" for="inlineRadio2">en proceso</label>
 			</div>
 			<div class="form-check form-check-inline">
-			  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+			  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="3">
 			  <label class="form-check-label" for="inlineRadio2">descartada</label>
 			</div>
 			<br /><br />
