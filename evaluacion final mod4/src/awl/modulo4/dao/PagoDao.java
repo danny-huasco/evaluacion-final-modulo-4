@@ -140,12 +140,11 @@ public class PagoDao implements IPagoDao {
 			stm = con.createStatement();
 			rs = stm.executeQuery(sql);
 			while (rs.next()) {
-				Pago p = new Pago();
-				p.setIdpago(rs.getInt(1));
-				p.setMesanio(rs.getString(2));
-				p.setMontoregular(rs.getInt(3));
-				p.setMontoadicional(rs.getInt(4));
-				p.setClienteid(rs.getInt(5));
+				pa.setIdpago(rs.getInt(1));
+				pa.setMesanio(rs.getString(2));
+				pa.setMontoregular(rs.getInt(3));
+				pa.setMontoadicional(rs.getInt(4));
+				pa.setClienteid(rs.getInt(5));
 			}
 			stm.close();
 			rs.close();

@@ -10,7 +10,7 @@
 <body style="border: 1px solid; padding-left: 15px; padding: 10px;">
 
 	<h1>Listar Pagos de Clientes</h1>
-	<c:if test="${ccmensaje != ''}">
+	<c:if test="${ccmensaje != null}">
 		<h2>
 			<c:out value="${ccmensaje}"></c:out>
 		</h2>

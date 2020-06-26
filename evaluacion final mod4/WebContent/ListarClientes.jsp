@@ -10,10 +10,12 @@
 </head>
 <body>
 
-<h1>Listado de clientes</h1>
-<c:if test="${ccmensaje != null}">
-	<h3><c:out value="${ccmensaje}"></c:out></h3>
-</c:if>
+	<h1>Listado de clientes</h1>
+	<c:if test="${ccmensaje != null}">
+		<h3>
+		<c:out value="${ccmensaje}"></c:out>
+		</h3>
+	</c:if>
 
 <table>
 	<tr>

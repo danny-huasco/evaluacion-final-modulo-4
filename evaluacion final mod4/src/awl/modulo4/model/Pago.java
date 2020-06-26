@@ -11,8 +11,7 @@ public class Pago {
 	
 	
 	
-	public Pago(int idpago, String mesanio, int montoregular, int montoadicional, int clienteid) {
-		this.idpago = idpago;
+	public Pago(String mesanio, int montoregular, int montoadicional, int clienteid) {
 		this.mesanio = mesanio;
 		this.montoregular = montoregular;
 		this.montoadicional = montoadicional;
@@ -22,9 +21,11 @@ public class Pago {
 
 
 
+
 	public Pago() {
 		// TODO Auto-generated constructor stub
 	}
+
 
 
 
