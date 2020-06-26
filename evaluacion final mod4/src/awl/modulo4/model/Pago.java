@@ -11,7 +11,8 @@ public class Pago {
 	
 	
 	
-	public Pago(String mesanio, int montoregular, int montoadicional, int clienteid) {
+	public Pago(int idpago, String mesanio, int montoregular, int montoadicional, int clienteid) {
+		this.idpago = idpago;
 		this.mesanio = mesanio;
 		this.montoregular = montoregular;
 		this.montoadicional = montoadicional;

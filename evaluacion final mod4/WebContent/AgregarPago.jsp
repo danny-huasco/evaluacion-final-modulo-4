@@ -1,43 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Gestionar Pagos de Clientes</title>
+<title>Insert title here</title>
 </head>
-<body style="border: 1px solid; padding-left: 15px; padding: 10px;">
-
-	<h1>Gestionar Pagos de Clientes</h1>
-	<c:if test="${cimensaje != ''}">
+<body>
+	<c:if test="${ccmensaje != ''}">
 		<h2>
-			<c:out value="${cimensaje}"></c:out>
+			<c:out value="${ccmensaje}"></c:out>
 		</h2>
 	</c:if>
-
-	<table>
-		<tr>
-			<th>ID Pago</th>
-			<th>Mes/Año</th>
-			<th>Monto Regular</th>
-			<th>Monto Adicional</th>
-			<th>ID Cliente</th>
-		</tr>
-		<!--JSTL para cada campo en la variable litems-->
-		<c:forEach Pago="${lpago}" var="pago">
-			<tr>
-				<td>${item.getIdpago()}</td>
-				<td>${item.getMesanio()}</td>
-				<td>${item.getMontoregular()}</td>
-				<td>${item.getMontoadicional()}</td>
-				<td>${item.getClienteid()}</td>
-			</tr>
-		</c:forEach>
-	</table>
-	<br />
-	<br />
-
-	<form action="agregar" method="post"
+	<form action="AgregarPago" method="post"
 		style="border: 1px solid; padding-left: 15px;">
 		<p>
 			ID Pago: &nbsp;<input type="number" name="idpago"
@@ -77,7 +53,7 @@
 		</p>
 		<p>
 			<input type="submit" value="Listar Pago de Clientes"
-				formaction="${pageContext.request.contextPath}/ListarClientes"
+				formaction="${pageContext.request.contextPath}/ListadoClientes"
 				style="width: 150px; margin: 0; box-sizing: border-box;" />
 		</p>
 	</form>

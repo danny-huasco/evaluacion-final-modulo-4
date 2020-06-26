@@ -1,6 +1,8 @@
 package awl.modulo4.controlador;
 
-import java.io.IOException; 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,16 +14,16 @@ import awl.modulo4.dao.PagoDao;
 import awl.modulo4.model.Pago;
 
 /**
- * Servlet implementation class AgregarPago
+ * Servlet implementation class ListarPago
  */
-@WebServlet("/AgregarPago")
-public class AgregarPago extends HttpServlet {
+@WebServlet("/ListarPago")
+public class ListarPago extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public AgregarPago() {
+    public ListarPago() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -32,8 +34,12 @@ public class AgregarPago extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
-			
-		request.getRequestDispatcher("AgregarPago.jsp").forward(request, response);
+		PagoDao pdao = new PagoDao();
+		List<Pago> listapag = new ArrayList<Pago>();
+		listapag = pdao.listar();
+				
+		request.setAttribute("listapago", listapag);
+		request.getRequestDispatcher("ListarPago.jsp").forward(request, response);
 	}
 
 	/**
@@ -41,29 +47,7 @@ public class AgregarPago extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		// doGet(request, response);
-		
-		int idpago = Integer.parseInt(request.getParameter("idpago"));
-		String mesanio = request.getParameter("mesanio");
-		int montoregular = Integer.parseInt(request.getParameter("montoregular"));
-		int montoadicional = Integer.parseInt(request.getParameter("montoadicional"));
-		int clienteid = Integer.parseInt(request.getParameter("clienteid"));
-		
-		Pago pag = new Pago(idpago,mesanio,montoregular,montoadicional,clienteid);
-		PagoDao pagodao = new PagoDao();
-		
-		boolean agregar = false;
-		agregar = pagodao.agregar(pag);
-		
-		String mensaje = "";
-		
-		if (agregar)
-			mensaje = "Datos de pago ingresado.";
-		else
-			mensaje = "Ocurrió un error al procesar la solicitud";
-		
-		request.setAttribute("ccmensaje", mensaje);
-		request.getRequestDispatcher("AgregarPago.jsp").forward(request, response);
+		doGet(request, response);
 	}
 
 }
