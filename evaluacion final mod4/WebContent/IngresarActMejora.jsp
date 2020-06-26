@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,6 +18,9 @@
     <div class="container text-center">
     	<h1 class="display-4">Ingrese los datos solicitados</h1>
     	<br /><br />
+    	<c:if test="${ccmensaje != null}">
+			<h3><c:out value="${ccmensaje}"></c:out></h3>
+		</c:if>
     	<form action="IngresarMejora" method="post">
 	    	<div class="input-group mb-3">
 			  <div class="input-group-prepend">
