@@ -11,7 +11,12 @@ public class Pago {
 	
 	
 	
+<<<<<<< HEAD
 	public Pago(String mesanio, int montoregular, int montoadicional, int clienteid) {
+=======
+	public Pago(int idpago, String mesanio, int montoregular, int montoadicional, int clienteid) {
+		this.idpago = idpago;
+>>>>>>> c057e94947c259392f06c9737ea5a2d5d0a2c243
 		this.mesanio = mesanio;
 		this.montoregular = montoregular;
 		this.montoadicional = montoadicional;
@@ -21,6 +26,16 @@ public class Pago {
 
 
 
+<<<<<<< HEAD
+=======
+	public Pago() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+
+>>>>>>> c057e94947c259392f06c9737ea5a2d5d0a2c243
 	public int getIdpago() {
 		return idpago;
 	}

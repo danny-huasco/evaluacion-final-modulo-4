@@ -1,6 +1,10 @@
 package awl.modulo4.dao;
 
+<<<<<<< HEAD
 import java.sql.Connection;
+=======
+import java.sql.Connection; 
+>>>>>>> c057e94947c259392f06c9737ea5a2d5d0a2c243
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -8,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import awl.modulo4.conexion.ConexionSingleton;
+<<<<<<< HEAD
 import awl.modulo4.idao.InterfazDao;
 import awl.modulo4.model.Accidente;
 import awl.modulo4.model.Asesoria;
@@ -20,6 +25,12 @@ import awl.modulo4.model.Pago;
 import awl.modulo4.model.Visita;
 
 public class ClienteDao implements InterfazDao {
+=======
+import awl.modulo4.idao.IClienteDao;
+import awl.modulo4.model.Cliente;
+
+public class ClienteDao implements IClienteDao {
+>>>>>>> c057e94947c259392f06c9737ea5a2d5d0a2c243
 
 	@Override
 	public boolean agregar(Cliente cliente) {
@@ -48,7 +59,11 @@ public class ClienteDao implements InterfazDao {
 	}
 
 	@Override
+<<<<<<< HEAD
 	public List<Cliente> listarCliente() {
+=======
+	public List<Cliente> listar() {
+>>>>>>> c057e94947c259392f06c9737ea5a2d5d0a2c243
 		// TODO Auto-generated method stub
 		Connection con = null;
 		Statement stm = null;
@@ -134,7 +149,11 @@ public class ClienteDao implements InterfazDao {
 	}
 
 	@Override
+<<<<<<< HEAD
 	public Cliente buscarCliente(int clienteid) {
+=======
+	public Cliente buscar(int clienteid) {
+>>>>>>> c057e94947c259392f06c9737ea5a2d5d0a2c243
 		// TODO Auto-generated method stub
 		Connection con = null;
 		Statement stm = null;
@@ -167,6 +186,7 @@ public class ClienteDao implements InterfazDao {
 		return cli;
 	}
 
+<<<<<<< HEAD
 	@Override
 	public boolean agregar(Accidente accidente) {
 		// TODO Auto-generated method stub
@@ -281,4 +301,6 @@ public class ClienteDao implements InterfazDao {
 		return null;
 	}
 
+=======
+>>>>>>> c057e94947c259392f06c9737ea5a2d5d0a2c243
 }

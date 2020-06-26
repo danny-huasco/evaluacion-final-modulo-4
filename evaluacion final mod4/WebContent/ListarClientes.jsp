@@ -6,7 +6,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<<<<<<< HEAD
 <title>Insert title here</title>
+=======
+<title>Listado de Clientes</title>
+>>>>>>> c057e94947c259392f06c9737ea5a2d5d0a2c243
 </head>
 <body>
 
