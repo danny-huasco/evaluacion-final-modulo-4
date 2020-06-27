@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,6 +14,9 @@
     <title>Mostrar Actividad de Mejora</title>
   </head>
   <body>
+  	<c:if test="${ccmensaje != null}">
+		<h3><c:out value="${ccmensaje}"></c:out></h3>
+	</c:if>
     <div class="container">
     	<h1 class="display-4">Actividad de Mejora</h1>
     	
@@ -20,44 +24,41 @@
 			  <div class="input-group-prepend">
 			    <span class="input-group-text" id="basic-addon1">ID Cliente</span>
 			  </div>
-			  <input type="text" class="form-control" placeholder="123A" aria-label="Username" aria-describedby="basic-addon1" readonly>
+			  <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" value="${mejora.getIdmejora()}" readonly>
 			</div>
 			<br />
 	    	<div class="input-group mb-3">
 			  <div class="input-group-prepend">
 			    <span class="input-group-text" id="basic-addon1">fecha</span>
 			  </div>
-			  <input type="text" class="form-control" placeholder="dd-mm-yyyy" aria-label="Username" aria-describedby="basic-addon1" readonly>
+			  <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" value="${mejora.getFecha()}" readonly>
 			</div>
 			<br />
 			<div class="input-group mb-3">
 			  <div class="input-group-prepend">
 			    <span class="input-group-text" id="basic-addon1">Motivo</span>
 			  </div>
-			  <input type="text" class="form-control" placeholder="accidente" aria-label="Username" aria-describedby="basic-addon1" readonly>
+			  <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" value="${mejora.getMotivo()}" readonly>
 			</div>
 			<br />
 			<div class="input-group">
 	  			<div class="input-group-prepend">
 	    			<span class="input-group-text">Actividades</span>
 	  			</div>
-	  			<textarea class="form-control" aria-label="actividades" placeholder="- actividad 1"readonly></textarea>
+	  			<textarea class="form-control" aria-label="actividades"  value="${mejora.getActividades()}" readonly></textarea>
 			</div>
 			<br /><br />
-	    	<div class="form-check form-check-inline">
-			  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1" checked="true">
-			  <label class="form-check-label" for="inlineRadio1">realizada</label>
-			</div>
-			<div class="form-check form-check-inline">
-			  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">
-			  <label class="form-check-label" for="inlineRadio2">en proceso</label>
-			</div>
-			<div class="form-check form-check-inline">
-			  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="3">
-			  <label class="form-check-label" for="inlineRadio2">descartada</label>
+	    	<div class="input-group">
+	  			<div class="input-group-prepend">
+	    			<span class="input-group-text">Estado</span>
+	  			</div>
+	  			<textarea class="form-control" aria-label=""  value="${mejora.getEstado()}" readonly></textarea>
 			</div>
 			<br />
 			<br />
+			<a href="${pageContext.request.contextPath}/IngresarActMejora.jsp"><button type="button" class="btn btn-primary btn-lg">Ingresar otra actividad de mejora</button></a>
+			 &nbsp&nbsp&nbsp
+			<a href="${pageContext.request.contextPath}/index.jsp"><button type="button" class="btn btn-primary btn-lg">Aceptar y salir</button></a>
 			<br />
     </div>
     
