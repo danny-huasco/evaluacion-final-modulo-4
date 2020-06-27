@@ -264,7 +264,7 @@ public class ClienteDao implements InterfazDao {
 	}
 
 	@Override
-	public List<Mejora> listarPagos() {
+	public List<Pago> listarPagos() {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -276,7 +276,7 @@ public class ClienteDao implements InterfazDao {
 	}
 
 	@Override
-	public List<Mejora> listarVisita() {
+	public List<Visita> listarVisita() {
 		// TODO Auto-generated method stub
 		return null;
 	}

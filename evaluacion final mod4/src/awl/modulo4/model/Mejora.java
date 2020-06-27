@@ -11,7 +11,14 @@ public class Mejora {
 	
 	
 	
-	
+	public Mejora() {
+		this.idmejora = 0;
+		this.fecha = "01-01-2000";
+		this.motivo = "";
+		this.actividades = "";
+		this.estado = "";
+		this.clienteid = 001;
+	}
 	public Mejora(String fecha, String motivo, String actividades, String estado, int clienteid) {
 		this.fecha = fecha;
 		this.motivo = motivo;

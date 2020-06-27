@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import awl.modulo4.dao.MejoraDao;
 import awl.modulo4.model.Mejora;
 
 /**
@@ -33,26 +34,25 @@ public class AgregarActMejora extends HttpServlet {
 		request.getRequestDispatcher("IngresarActMejora.jsp").forward(request, response);
 	}
 
-	/**
+	/** 
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
 		
-		int idMejora = Integer.parseInt(request.getParameter("#"));//asignar id automaticamente
-		String fecha = request.getParameter("#fecha");
-		String motivo = request.getParameter("#motivo");
-		String actividades = request.getParameter("#actividades");
-		//ver cual de los round esta checked
-		String estado = request.getParameter("#");
-		int id_cliente = Integer.parseInt(request.getParameter("#idCliente"));
+		int idMejora = Integer.parseInt(request.getParameter("idMejora"));
+		String fecha = request.getParameter("fecha");
+		String motivo = request.getParameter("motivo");
+		String actividades = request.getParameter("actividades");		
+		String estado = request.getParameter("radiob");
+		int id_cliente = Integer.parseInt(request.getParameter("idCliente"));
 		
 		Mejora mej = new Mejora(fecha, motivo, actividades, estado, id_cliente);
 		MejoraDao mejDao = new MejoraDao();
 		
 		boolean agregar = false;
-		agregar = MejoraDao.agregar(mej);
+		agregar = mejDao.agregar(mej);
 		
 		String mensaje = "";
 		
