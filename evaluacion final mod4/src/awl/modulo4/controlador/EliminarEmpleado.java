@@ -52,7 +52,7 @@ public class EliminarEmpleado extends HttpServlet {
 			mensaje = "Ocurrió un error al procesar la solicitud";
 
 		List<Empleado> listaemp = new ArrayList<Empleado>();
-		listaemp = empleadodao.listar();				
+		listaemp = empleadodao.listarEmpleado();				
 		request.setAttribute("listaempleados", listaemp);
 		
 		request.setAttribute("ccmensaje", mensaje);

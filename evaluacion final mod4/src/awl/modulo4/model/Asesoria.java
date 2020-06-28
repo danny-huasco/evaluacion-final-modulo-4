@@ -30,7 +30,7 @@ public class Asesoria {
 
 
 
-	public int getIdasesoria() {
+	public int getIdAsesoria() {
 		return idasesoria;
 	}
 

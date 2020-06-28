@@ -34,7 +34,7 @@ public class EditarEmpleado extends HttpServlet {
 		
 		int empleadoid = Integer.parseInt(request.getParameter("id"));
 		EmpleadoDao empleadodao = new EmpleadoDao();
-		Empleado emp = empleadodao.buscar(empleadoid);
+		Empleado emp = empleadodao.buscarEmpleado(empleadoid);
 		request.setAttribute("regemp", emp);
 		request.getRequestDispatcher("EditarEmpleado.jsp").forward(request, response);
 	}

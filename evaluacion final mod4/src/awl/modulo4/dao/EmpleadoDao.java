@@ -8,10 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import awl.modulo4.conexion.ConexionSingleton;
-import awl.modulo4.idao.IEmpleadoDao;
-import awl.modulo4.model.Empleado;
+import awl.modulo4.idao.InterfazDao;
+import awl.modulo4.model.*;
 
-public class EmpleadoDao implements IEmpleadoDao {
+public class EmpleadoDao implements InterfazDao {
 
 	@Override
 	public boolean agregar(Empleado empleado) {
@@ -39,7 +39,7 @@ public class EmpleadoDao implements IEmpleadoDao {
 	}
 
 	@Override
-	public List<Empleado> listar() {//ListadoEmpleados
+	public List<Empleado> listarEmpleado() {//ListadoEmpleados
 		// TODO Auto-generated method stub
 		Connection con = null;
 		Statement stm = null;
@@ -122,7 +122,7 @@ public class EmpleadoDao implements IEmpleadoDao {
 	}
 
 	@Override
-	public Empleado buscar(int empleadoid) {//ListadoEmpleados
+	public Empleado buscarEmpleado(int empleadoid) {//ListadoEmpleados
 		// TODO Auto-generated method stub
 		Connection con = null;
 		Statement stm = null;
@@ -150,6 +150,120 @@ public class EmpleadoDao implements IEmpleadoDao {
 		}
 		
 		return emp;
+	}
+
+	@Override
+	public boolean agregar(Cliente cliente) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Cliente> listarCliente() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean actualizar(Cliente cliente) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean eliminar(Cliente cliente) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Cliente buscarCliente(int clienteid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean agregar(Accidente accidente) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Accidente> listarAccidente() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean agregar(Asesoria asesoria) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Asesoria> listarAsesoria() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean agregar(Capacitacion capacitacion) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Capacitacion> listarCapacitacion() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean agregar(Chequeo chequeo) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Chequeo> listarChequeo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean agregar(Mejora mejora) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Mejora> listarMejoras() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean agregar(Pago pago) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Pago> listarPagos() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean agregar(Visita visita) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Visita> listarVisita() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

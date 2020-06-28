@@ -38,7 +38,7 @@ public class ListadoEmpleados extends HttpServlet {
 		
 		EmpleadoDao edao = new EmpleadoDao();
 		List<Empleado> listaemp = new ArrayList<Empleado>();
-		listaemp = edao.listar();
+		listaemp = edao.listarEmpleado();
 				
 		request.setAttribute("listaempleados", listaemp);
 		request.getRequestDispatcher("ListarEmpleados.jsp").forward(request, response);		

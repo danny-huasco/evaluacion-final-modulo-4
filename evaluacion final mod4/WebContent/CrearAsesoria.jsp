@@ -6,13 +6,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Asesorías</title>
-<!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-</head>
+<!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
+</head>
 <body class="bg-light">
 
 <h1 class="display-4 p-2 font">Formulario Registro de Asesorías</h1>
+<c:if test="${ccmensaje != null}">
+	<h3><c:out value="${ccmensaje}"></c:out></h3>
+</c:if>
   <form action="CrearAsesoria" method="post" class="form pt-3">
   	<table class="table-bordered">
        	<tr>
@@ -20,7 +23,7 @@
             <label>ID Asesoría:</label>
             <input type="numeric" name="idasesoria" placeholder="Ingresar ID Asesoría">&nbsp;
             <label>Fecha: </label>
-            <input type="text" name="fecha" placeholder="dd-mm-aaaa">
+			<input id="fecha" type="text" name="fecha" placeholder="dd-mm-aaaa"/>
             <br><br>
             <label>ID Visitas:</label>
             <input type="numeric" name="visitaid" placeholder="Ingresar ID Visitas">
@@ -37,12 +40,12 @@
             <label>Asesoria Especial: </label>&nbsp;
             <div class="form-check-inline">
                 <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="especial">Sí
+                  <input type="radio" class="form-check-input" name="especial" value="si">Sí
                 </label>
             </div>
             <div class="form-check-inline">
                 <label class="form-check-label">
-                  <input type="radio" class="form-check-input" name="especial">No
+                  <input type="radio" class="form-check-input" name="especial" value="no">No
                 </label>
             </div>
             <br>
@@ -52,4 +55,5 @@
     </table>
    </form>
 </body>
+
 </html>

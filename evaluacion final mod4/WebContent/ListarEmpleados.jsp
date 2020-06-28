@@ -49,7 +49,7 @@
 	</tbody>
 </table>
 <br/>
-	<a href="${pageContext.request.contextPath}/AgregarEmpleado">Agregar nuevo empleado</a>
-
+	<a href="${pageContext.request.contextPath}/AgregarEmpleado">Agregar nuevo empleado</a>&nbsp;&nbsp;
+	<a href="${pageContext.request.contextPath}/index.jsp">Volver al inicio</a>
 </body>
 </html>

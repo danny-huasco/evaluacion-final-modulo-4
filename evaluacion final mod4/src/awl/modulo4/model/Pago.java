@@ -29,16 +29,6 @@ public class Pago {
 
 
 
-
-
-	public Pago(int idpago2, String mesanio2, int montoregular2, int montoadicionales2) {
-		// TODO Auto-generated constructor stub
-	}
-
-
-
-
-
 	public int getIdPago() {
 		return idpago;
 	}

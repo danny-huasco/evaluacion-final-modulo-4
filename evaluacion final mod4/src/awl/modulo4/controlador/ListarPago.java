@@ -37,7 +37,7 @@ public class ListarPago extends HttpServlet {
 		
 		PagoDao pdao = new PagoDao();
 		List<Pago> listapag = new ArrayList<Pago>();
-		listapag = pdao.listar();
+		listapag = pdao.listarPagos();
 				
 		request.setAttribute("listapagos", listapag);
 		request.getRequestDispatcher("ListarPago.jsp").forward(request, response);

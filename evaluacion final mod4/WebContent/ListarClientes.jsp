@@ -55,7 +55,7 @@
 	</tbody>
 </table>
 <br/>
-	<a href="${pageContext.request.contextPath}/AgregarCliente">Agregar nuevo cliente</a>
-
+	<a href="${pageContext.request.contextPath}/AgregarCliente">Agregar nuevo cliente</a>&nbsp;&nbsp;
+	<a href="${pageContext.request.contextPath}/index.jsp">Volver al inicio</a>
 </body>
 </html>
