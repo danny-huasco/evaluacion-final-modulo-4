@@ -18,25 +18,29 @@
 
 	<table>
 		<tr>
-			<th>ID Pago</th>
+		<!-- <th>ID Pago</th> -->
 			<th>Mes/Año</th>
 			<th>Monto Regular</th>
 			<th>Monto Adicional</th>
 			<th>ID Cliente</th>
 		</tr>
 		<!--JSTL para cada campo en la variable items-->
-		<c:forEach items="${listapago}" var="pago">
+		<c:forEach items="${listapagos}" var="pago">
 			<tr>
-				<td>${item.getIdpago()}</td>
-				<td>${item.getMesanio()}</td>
-				<td>${item.getMontoregular()}</td>
-				<td>${item.getMontoadicional()}</td>
-				<td>${item.getClienteid()}</td>
+			<!--<td>${item.getIdpago()}</td> -->
+				<td>${pago.getMesanio()}</td>
+				<td>${pago.getMontoregular()}</td>
+				<td>${pago.getMontoadicionales()}</td>
+				<td>${pago.getIdCliente()}</td>
+				<td>
+				
+				</td>
 			</tr>
 		</c:forEach>
 	</table>
 	<br />
-<a href="${pageContext.request.contextPath}/AgregarPago">Agregar pago</a>
+		<a href="${pageContext.request.contextPath}/AgregarPago?id=${pago.getIdPago()}">Agregar Pago</a><br>
+		<a href="${pageContext.request.contextPath}/index.jsp">Volver al inicio</a>
 
 </body>
 </html>

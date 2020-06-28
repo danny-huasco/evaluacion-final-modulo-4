@@ -15,7 +15,7 @@
 
 <ul>
 <li><a href="${pageContext.request.contextPath}/ListadoClientes">Administrar clientes</a></li>
-<li>Administrar empleados</li>
+<li><a href="${pageContext.request.contextPath}/ListadoEmpleados">Administrar empleados</a></li>
 <li><a href="${pageContext.request.contextPath}/CrearAsesoria">Crear Asesoria</a></li>
 <li><a href="${pageContext.request.contextPath}/ListarPago">Listar Pagos</a></li>
 </ul>

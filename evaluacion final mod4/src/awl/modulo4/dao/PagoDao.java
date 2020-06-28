@@ -21,8 +21,8 @@ public class PagoDao implements IPagoDao {
 		Statement stm = null;
 		Connection con = null;
 		
-		String sql = "INSERT INTO Pagos VALUES (null,'" + pago.getIdpago() + "','" + pago.getMesanio() 
-		+ "','" + pago.getMontoregular() + "','" + pago.getMontoadicional() + "','"+ pago.getClienteid() + "')";
+		String sql = "INSERT INTO Pagos VALUES ('" + pago.getIdPago() + "','" + pago.getMesanio() 
+		+ "','" + pago.getMontoregular() + "','" + pago.getMontoadicionales() + "','"+ pago.getIdCliente() + "')";
 		
 		try {
 			con = ConexionSingleton.getConnection();
@@ -46,7 +46,7 @@ public class PagoDao implements IPagoDao {
 		Statement stm = null;
 		ResultSet rs = null;
 		
-		String sql = "select * from Pagos ORDER BY ID";
+		String sql = "select * from Pagos ORDER BY idpago";
 		
 		List<Pago> listaPago = new ArrayList<Pago>();
 		
@@ -56,11 +56,11 @@ public class PagoDao implements IPagoDao {
 			rs = stm.executeQuery(sql);
 			while (rs.next()) {
 				Pago p = new Pago();
-				p.setIdpago(rs.getInt(1));
+				p.setIdPago(rs.getInt(1));
 				p.setMesanio(rs.getString(2));
 				p.setMontoregular(rs.getInt(3));
-				p.setMontoadicional(rs.getInt(4));
-				p.setClienteid(rs.getInt(5));
+				p.setMontoadicionales(rs.getInt(4));
+				p.setIdCliente(rs.getInt(5));
 				listaPago.add(p);
 			}
 			stm.close();
@@ -82,7 +82,7 @@ public class PagoDao implements IPagoDao {
 		
 		boolean actualizar = false;
 		
-		String sql = "UPDATE Pago SET idpago = '" + pago.getIdpago() + "', mesanio = '" + pago.getMesanio() + "', montoregular = '" + pago.getMontoregular() + "', montoadicional = '" + pago.getMontoadicional() + "', clienteid = '" + pago.getClienteid() + "' WHERE id = '" + pago.getIdpago() + "'";
+		String sql = "UPDATE Pago SET idpago = '" + pago.getIdPago() + "', mesanio = '" + pago.getMesanio() + "', montoregular = '" + pago.getMontoregular() + "', montoadicional = '" + pago.getMontoadicionales() + "', cliente_id = '" + pago.getIdCliente() + "' WHERE id = '" + pago.getIdPago() + "'";
 		
 		try {
 			con = ConexionSingleton.getConnection();
@@ -107,7 +107,7 @@ public class PagoDao implements IPagoDao {
 		
 		boolean eliminar = false;
 		
-		String sql = "DELETE FROM Pago WHERE id = " + pago.getIdpago();
+		String sql = "DELETE FROM Pago WHERE idpago = " + pago.getIdPago();
 		
 		try {
 			con = ConexionSingleton.getConnection();
@@ -125,13 +125,13 @@ public class PagoDao implements IPagoDao {
 	}
 
 	@Override
-	public Pago buscar(int idpago) {
+	public Pago buscar(int pagoid) {
 		// TODO Auto-generated method stub
 		Connection con = null;
 		Statement stm = null;
 		ResultSet rs = null;
 		
-		String sql = "select * from Pagos WHERE id = '" + idpago + "'";
+		String sql = "select * from Pagos WHERE idpago = '" + pagoid + "'";
 		
 		Pago pa = new Pago();
 		
@@ -140,11 +140,11 @@ public class PagoDao implements IPagoDao {
 			stm = con.createStatement();
 			rs = stm.executeQuery(sql);
 			while (rs.next()) {
-				pa.setIdpago(rs.getInt(1));
+				pa.setIdPago(rs.getInt(1));
 				pa.setMesanio(rs.getString(2));
 				pa.setMontoregular(rs.getInt(3));
-				pa.setMontoadicional(rs.getInt(4));
-				pa.setClienteid(rs.getInt(5));
+				pa.setMontoadicionales(rs.getInt(4));
+				pa.setIdCliente(rs.getInt(5));
 			}
 			stm.close();
 			rs.close();

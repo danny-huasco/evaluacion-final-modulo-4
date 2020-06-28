@@ -20,7 +20,7 @@
             <label>ID Asesoría:</label>
             <input type="numeric" name="idasesoria" placeholder="Ingresar ID Asesoría">&nbsp;
             <label>Fecha: </label>
-            <input type="date" name="fecha" placeholder="dd-mm-aaaa">
+            <input type="text" name="fecha" placeholder="dd-mm-aaaa">
             <br><br>
             <label>ID Visitas:</label>
             <input type="numeric" name="visitaid" placeholder="Ingresar ID Visitas">

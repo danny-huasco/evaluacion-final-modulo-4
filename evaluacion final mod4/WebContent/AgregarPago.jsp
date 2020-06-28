@@ -32,7 +32,7 @@
 		</p>
 		
 		<p>
-			Monto Adicionales: <input type="number" name="montoadicional"
+			Monto Adicionales: <input type="number" name="montoadicionales"
 				maxlength="2"
 				style="width: 150px; margin: 0; box-sizing: border-box;" />
 		</p>
@@ -44,13 +44,10 @@
 		</p>
 		
 		<p>
-			<input type="submit" value="Guardar Pago"
+			<input type="submit" value="Grabar Pago"
 				style="width: 150px; margin: 0; box-sizing: border-box;" />
 		</p>
-		<p>
-			<input type="hidden" name="hdnidpago" value="${idpago}"
-				style="width: 150px; margin: 0; box-sizing: border-box;" />
-		</p>
+
 		<p>
 			<input type="submit" value="Listar Pago de Clientes"
 				formaction="${pageContext.request.contextPath}/ListadoClientes"

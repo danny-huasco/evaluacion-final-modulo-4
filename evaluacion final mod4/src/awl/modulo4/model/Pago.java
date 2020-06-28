@@ -5,17 +5,18 @@ public class Pago {
 	private int idpago;
 	private String mesanio;
 	private int montoregular;
-	private int montoadicional;
-	private int clienteid;
+	private int montoadicionales;
+	private int idcliente;
 	
 	
 	
 	
-	public Pago(String mesanio, int montoregular, int montoadicional, int clienteid) {
+	public Pago(int idpago, String mesanio, int montoregular, int montoadicionales, int idcliente) {
+		this.idpago = idpago;
 		this.mesanio = mesanio;
 		this.montoregular = montoregular;
-		this.montoadicional = montoadicional;
-		this.clienteid = clienteid;
+		this.montoadicionales = montoadicionales;
+		this.idcliente = idcliente;
 	}
 
 
@@ -30,14 +31,22 @@ public class Pago {
 
 
 
-	public int getIdpago() {
+	public Pago(int idpago2, String mesanio2, int montoregular2, int montoadicionales2) {
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+
+
+	public int getIdPago() {
 		return idpago;
 	}
 
 
 
 
-	public void setIdpago(int idpago) {
+	public void setIdPago(int idpago) {
 		this.idpago = idpago;
 	}
 
@@ -72,29 +81,29 @@ public class Pago {
 
 
 
-	public int getMontoadicional() {
-		return montoadicional;
+	public int getMontoadicionales() {
+		return montoadicionales;
 	}
 
 
 
 
-	public void setMontoadicional(int montoadicional) {
-		this.montoadicional = montoadicional;
+	public void setMontoadicionales(int montoadicionales) {
+		this.montoadicionales = montoadicionales;
 	}
 
 
 
 
-	public int getClienteid() {
-		return clienteid;
+	public int getIdCliente() {
+		return idcliente;
 	}
 
 
 
 
-	public void setClienteid(int clienteid) {
-		this.clienteid = clienteid;
+	public void setIdCliente(int idcliente) {
+		this.idcliente = idcliente;
 	}
 
 
@@ -103,7 +112,7 @@ public class Pago {
 	@Override
 	public String toString() {
 		return "Pago [idpago=" + idpago + ", mesanio=" + mesanio + ", montoregular=" + montoregular
-				+ ", montoadicional=" + montoadicional + ", clienteid=" + clienteid + "]";
+				+ ", montoadicional=" + montoadicionales + ", idcliente=" + idcliente + "]";
 	}
 	
 	

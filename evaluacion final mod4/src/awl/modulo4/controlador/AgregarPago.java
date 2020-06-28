@@ -43,13 +43,13 @@ public class AgregarPago extends HttpServlet {
 		// TODO Auto-generated method stub
 		// doGet(request, response);
 		
-		//int idpago = Integer.parseInt(request.getParameter("idpago"));
+		int idpago = Integer.parseInt(request.getParameter("idpago"));
 		String mesanio = request.getParameter("mesanio");
 		int montoregular = Integer.parseInt(request.getParameter("montoregular"));
-		int montoadicional = Integer.parseInt(request.getParameter("montoadicional"));
-		int clienteid = Integer.parseInt(request.getParameter("clienteid"));
+		int montoadicionales = Integer.parseInt(request.getParameter("montoadicionales"));
+		int idcliente = Integer.parseInt(request.getParameter("idcliente"));
 		
-		Pago pag = new Pago(mesanio,montoregular,montoadicional,clienteid);
+		Pago pag = new Pago(idpago,mesanio,montoregular,montoadicionales,idcliente);
 		PagoDao pagodao = new PagoDao();
 		
 		boolean agregar = false;

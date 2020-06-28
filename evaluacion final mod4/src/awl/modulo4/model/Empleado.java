@@ -9,19 +9,26 @@ public class Empleado {
 	
 	
 	public Empleado(String nombreempleado, String especialidad) {
+		//this.idempleado = idempleado;
 		this.nombreempleado = nombreempleado;
 		this.especialidad = especialidad;
 	}
 
 
 
-	public int getIdempleado() {
+	public Empleado() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+	public int getIdEmpleado() {
 		return idempleado;
 	}
 
 
 
-	public void setIdempleado(int idempleado) {
+	public void setIdEmpleado(int idempleado) {
 		this.idempleado = idempleado;
 	}
 

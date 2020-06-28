@@ -10,6 +10,6 @@ public interface IPagoDao {
 	public List<Pago> listar();
 	public boolean actualizar(Pago pago);
 	public boolean eliminar (Pago pago);
-	public Pago buscar(int idpago);
+	public Pago buscar(int pagoid);
 	
 }

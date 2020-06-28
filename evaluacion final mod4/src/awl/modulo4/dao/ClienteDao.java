@@ -21,7 +21,7 @@ public class ClienteDao implements IClienteDao {
 		Statement stm = null;
 		Connection con = null;
 		
-		String sql = "INSERT INTO Cliente VALUES (null,'" + cliente.getNombre() + "','" + cliente.getTelefono() 
+		String sql = "INSERT INTO Cliente VALUES ('" + cliente.getIdCliente()  + "','" + cliente.getNombre() + "','" + cliente.getTelefono() 
 		+ "','" + cliente.getCorreoelectronico() + "','" + cliente.getRubro() + "','"+ cliente.getDireccion() + "')";
 		
 		try {
@@ -83,7 +83,7 @@ public class ClienteDao implements IClienteDao {
 		
 		boolean actualizar = false;
 		
-		String sql = "UPDATE Cliente SET nombre = '" + cliente.getNombre() + "', telefono = '" + cliente.getTelefono() + "', correoelectronico = '" + cliente.getCorreoelectronico() + "', rubro = '" + cliente.getRubro() + "', direccion = '" + cliente.getDireccion() + "' WHERE id = '" + cliente.getIdCliente() + "'";
+		String sql = "UPDATE Cliente SET ID = '" + cliente.getIdCliente()  + "', nombre = '" + cliente.getNombre() + "', telefono = '" + cliente.getTelefono() + "', correoelectronico = '" + cliente.getCorreoelectronico() + "', rubro = '" + cliente.getRubro() + "', direccion = '" + cliente.getDireccion() + "' WHERE id = '" + cliente.getIdCliente() + "'";
 		
 		try {
 			con = ConexionSingleton.getConnection();
