@@ -14,9 +14,11 @@
 <h3>¿Qué acción desea realizar?</h3>
 
 <ul>
-<li><a href="${pageContext.request.contextPath}/ListadoClientes">Administrar clientes</a></li>
-<li><a href="${pageContext.request.contextPath}/ListadoEmpleados">Administrar empleados</a></li>
+<li><a href="${pageContext.request.contextPath}/ListadoClientes">Administrar Clientes</a></li>
+<li><a href="${pageContext.request.contextPath}/ListadoEmpleados">Administrar Empleados</a></li>
 <li><a href="${pageContext.request.contextPath}/ListarCapacitacion">Gestionar Capacitaciones</a></li>
+<li><a href="${pageContext.request.contextPath}/ListadoAccidente">Gestionar Accidentes</a></li>
+<li><a href="${pageContext.request.contextPath}/ListadoAsesoria">Gestionar Asesorias</a></li>
 <li><a href="${pageContext.request.contextPath}/ListadoMejoras">Gestionar Actividades de Mejoras</a></li>
 <li><a href="${pageContext.request.contextPath}/ListarPago">Gestionar Pagos</a></li>
 <li><a href="${pageContext.request.contextPath}/CrearAsesoria">Crear Asesoria</a></li>

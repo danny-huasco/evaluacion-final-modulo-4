@@ -12,12 +12,18 @@ public class Accidente {
 	
 	
 	
-	public Accidente(String fecha, String hora, String suceso, String lugar, int clienteid) {
+	public Accidente(int idaccidente, String fecha, String hora, String suceso, String lugar, int clienteid) {
+		this.idaccidente = idaccidente;
 		this.fecha = fecha;
 		this.hora = hora;
 		this.suceso = suceso;
 		this.lugar = lugar;
 		this.clienteid = clienteid;
+	}
+
+
+	public Accidente() {
+		// TODO Auto-generated constructor stub
 	}
 
 
