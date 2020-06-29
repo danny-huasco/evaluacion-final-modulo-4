@@ -11,11 +11,19 @@ public class Capacitacion {
 	
 	
 	
-	public Capacitacion(String fecha, String hora, int numasistentes, int idvisita) {
+	public Capacitacion(int idcapacitacion, String fecha, String hora, int numasistentes, int visitaid) {
+		this.idcapacitacion = idcapacitacion;
 		this.fecha = fecha;
 		this.hora = hora;
 		this.numasistentes = numasistentes;
-		this.visitaid = idvisita;
+		this.visitaid = visitaid;
+	}
+
+
+
+
+	public Capacitacion() {
+		// TODO Auto-generated constructor stub
 	}
 
 
@@ -77,14 +85,14 @@ public class Capacitacion {
 
 
 
-	public int getIdvisita() {
+	public int getVisitaid() {
 		return visitaid;
 	}
 
 
 
 
-	public void setIdvisita(int visitaid) {
+	public void setVisitaid(int visitaid) {
 		this.visitaid = visitaid;
 	}
 
