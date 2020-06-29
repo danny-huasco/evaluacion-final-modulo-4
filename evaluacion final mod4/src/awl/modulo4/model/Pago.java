@@ -29,14 +29,14 @@ public class Pago {
 
 
 
-	public int getIdPago() {
+	public int getIdpago() {
 		return idpago;
 	}
 
 
 
 
-	public void setIdPago(int idpago) {
+	public void setIdpago(int idpago) {
 		this.idpago = idpago;
 	}
 

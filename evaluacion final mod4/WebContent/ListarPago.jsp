@@ -1,7 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -27,7 +26,7 @@
 <table id="tabla" class="table table-striped table-bordered" style="width: 100%; ">
 	<thead>		
 	<tr>
-	<!-- <th>ID Pago</th> -->
+		<th>ID Pago</th>
 		<th>Mes/Año</th>
 		<th>Monto Regular</th>
 		<th>Monto Adicional</th>
@@ -38,7 +37,7 @@
 	<!--JSTL para cada campo en la variable items-->
 	<c:forEach items="${listapagos}" var="pago">
 		<tr>
-		<!--<td>${item.getIdpago()}</td> -->
+			<td>${pago.getIdpago()}</td>
 			<td>${pago.getMesanio()}</td>
 			<td>${pago.getMontoregular()}</td>
 			<td>${pago.getMontoadicionales()}</td>
@@ -48,7 +47,7 @@
 	</tbody>
 </table>
 <br/>
-	<a href="${pageContext.request.contextPath}/AgregarPago?id=${pago.getIdPago()}">Agregar nuevo Pago</a>&nbsp;&nbsp;
+	<a href="${pageContext.request.contextPath}/AgregarPago">Agregar nuevo Pago</a>&nbsp;&nbsp;
 	<a href="${pageContext.request.contextPath}/index.jsp">Volver al inicio</a>
 
 </body>

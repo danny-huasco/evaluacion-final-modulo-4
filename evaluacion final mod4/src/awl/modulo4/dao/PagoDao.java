@@ -21,7 +21,7 @@ public class PagoDao implements InterfazDao {
 		Statement stm = null;
 		Connection con = null;
 		
-		String sql = "INSERT INTO Pagos VALUES ('" + pago.getIdPago() + "','" + pago.getMesanio() 
+		String sql = "INSERT INTO Pagos VALUES ('" + pago.getIdpago() + "','" + pago.getMesanio() 
 		+ "','" + pago.getMontoregular() + "','" + pago.getMontoadicionales() + "','"+ pago.getIdCliente() + "')";
 		
 		try {
@@ -56,7 +56,7 @@ public class PagoDao implements InterfazDao {
 			rs = stm.executeQuery(sql);
 			while (rs.next()) {
 				Pago p = new Pago();
-				p.setIdPago(rs.getInt(1));
+				p.setIdpago(rs.getInt(1));
 				p.setMesanio(rs.getString(2));
 				p.setMontoregular(rs.getInt(3));
 				p.setMontoadicionales(rs.getInt(4));
