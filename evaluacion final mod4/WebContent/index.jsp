@@ -16,9 +16,9 @@
 <ul>
 <li><a href="${pageContext.request.contextPath}/ListadoClientes">Administrar clientes</a></li>
 <li><a href="${pageContext.request.contextPath}/ListadoEmpleados">Administrar empleados</a></li>
-<li><a href="${pageContext.request.contextPath}/ListadoMejoras">Listar actividades de Mejoras</a></li>
-<li><a href="${pageContext.request.contextPath}/AgregarActMejora">Agregar Actividades de Mejoras</a></li>
-<li><a href="${pageContext.request.contextPath}/ListarPago">Listar Pagos</a></li>
+<li><a href="${pageContext.request.contextPath}/ListarCapacitacion">Gestionar Capacitaciones</a></li>
+<li><a href="${pageContext.request.contextPath}/ListadoMejoras">Gestionar Actividades de Mejoras</a></li>
+<li><a href="${pageContext.request.contextPath}/ListarPago">Gestionar Pagos</a></li>
 <li><a href="${pageContext.request.contextPath}/CrearAsesoria">Crear Asesoria</a></li>
 </ul>
 
