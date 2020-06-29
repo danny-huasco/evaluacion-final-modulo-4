@@ -3,26 +3,34 @@
 <!DOCTYPE html>
 <html>
 <head>
- <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos.css">
-      <!-- CSS
-  ================================================== -->
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- CSS -->
   <!-- Themefisher Icon font -->
-  <link rel="stylesheet" href="plugins/themefisher-font.v-2/style.css">
+
   <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Slick Carousel -->
-  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
-  <!--================================================== -->
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  
+        <!-- Main jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/plotly-latest.min.js"></script>
+    <!-- Smooth Scroll js -->
+    <script src="js/smooth-scroll.min.js"></script>
+
   <title>Reportar Accidente </title>
-<!--================================================== -->
 
 </head>
 <body>
@@ -33,7 +41,7 @@
 		<h2>
 			<c:out value="${ccmensaje}"></c:out>
 		</h2>
-	</c:if>
+		</c:if>
        
     </header>
 
@@ -54,7 +62,6 @@
         </div>
       </div> 
 
-      <!-- Srart Contact Us =========================================== -->		
 	<section class="contact-us section bg-gray" id="contact">
 		<div class="container">
 			<div class="row">
@@ -73,24 +80,24 @@
 					<form id="contact-form" method="post" action="AgregarAccidente" role="form">
 					
                         <div class="form-group">
-                            <input type="number" placeholder="Id cliente" class="form-control" name="idcliente" >
+                            <input type="number" placeholder="Id cliente" class="form-control" name="idcliente" required >
                         </div>
                         
                         <div class="form-group">
-                            <input type="number" placeholder="Id accidente" class="form-control" name="idaccidente" >
+                            <input type="number" placeholder="Id accidente" class="form-control" name="idaccidente" required>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" placeholder="Fecha" class="form-control" name="fecha">
+                            <input type="text" placeholder="Fecha" class="form-control" name="fecha" required>
                         </div>
 
 
                         <div class="form-group">
-                            <input type="text" placeholder="Hora" class="form-control" name="hora" >
+                            <input type="text" placeholder="Hora" class="form-control" name="hora" required>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" placeholder="Lugar" class="form-control" name="lugar" >
+                            <input type="text" placeholder="Lugar" class="form-control" name="lugar" required>
                         </div>
                         
                         <div class="form-group">
@@ -106,24 +113,12 @@
 					
 				<a href="${pageContext.request.contextPath}/ListadoAccidente"> Ir al listado de accidentes </a>
 				</div>
-			</div> <!-- end row -->
+			</div>
 			
-		</div> <!-- end container -->
-	</section> <!-- end section -->
+		</div>
+	</section>
 
-      <!-- Main jQuery -->
-    <script src="plugins/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="plugins/bootstrap/dist/js/popper.min.js"></script>
-    <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- Owl Carousel -->
-    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <!-- Smooth Scroll js -->
-    <script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-    
-    <!-- Custom js -->
-    <script src="js/script.js"></script>
+
   
 
 </body>

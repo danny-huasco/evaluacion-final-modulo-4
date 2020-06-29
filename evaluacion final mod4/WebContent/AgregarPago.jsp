@@ -50,7 +50,7 @@
 
 		<p>
 			<input type="submit" value="Listar Pago de Clientes"
-				formaction="${pageContext.request.contextPath}/ListadoClientes"
+				formaction="${pageContext.request.contextPath}/ListarPago"
 				style="width: 150px; margin: 0; box-sizing: border-box;" />
 		</p>
 	</form>

@@ -6,16 +6,23 @@
 <head>
 <meta charset="ISO-8859-1">
 <title> Listar Capacitaciones</title>
-    <link href="css/bootstrap.min.css">
+    <!-- CSS Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/datatables.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap4.css">
+    <!-- jQuery, datatable -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.es.js"></script>
 </head>
-<body>
+<body style="padding: 10px;">
   		<h1>Listar Capacitación</h1>
 		<c:if test="${ccmensaje != null}">
 			<h3><c:out value="${ccmensaje}"></c:out></h3>
 		</c:if>
 		
 		<br>
-		<table class="table">
+		<table id="tabla" class="table table-striped table-bordered" style="width: 100%; ">
 		<thead>
 		   <tr>
 		     <th>ID Capacitación</th>

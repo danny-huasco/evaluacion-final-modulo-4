@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="es">
 	<head>		
@@ -21,7 +20,7 @@
 <li><a href="${pageContext.request.contextPath}/ListadoAsesoria">Gestionar Asesorias</a></li>
 <li><a href="${pageContext.request.contextPath}/ListadoMejoras">Gestionar Actividades de Mejoras</a></li>
 <li><a href="${pageContext.request.contextPath}/ListarPago">Gestionar Pagos</a></li>
-<li><a href="${pageContext.request.contextPath}/CrearAsesoria">Crear Asesoria</a></li>
+<li><a href="${pageContext.request.contextPath}/IngresarAsesoria">Ingresar Asesoria</a></li>
 </ul>
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->

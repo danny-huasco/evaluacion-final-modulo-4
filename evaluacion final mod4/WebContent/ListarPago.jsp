@@ -39,8 +39,8 @@
 		<tr>
 			<td>${pago.getIdpago()}</td>
 			<td>${pago.getMesanio()}</td>
-			<td>${pago.getMontoregular()}</td>
-			<td>${pago.getMontoadicionales()}</td>
+			<td>$${pago.getMontoregular()}</td>
+			<td>$${pago.getMontoadicionales()}</td>
 			<td>${pago.getIdCliente()}</td>
 		</tr>
 	</c:forEach>
