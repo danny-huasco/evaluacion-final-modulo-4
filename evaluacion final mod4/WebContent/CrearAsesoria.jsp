@@ -21,12 +21,12 @@
        	<tr>
             <td class="p-3">
             <label>ID Asesoría:</label>
-            <input type="numeric" name="idasesoria" placeholder="Ingresar ID Asesoría">&nbsp;
+            <input type="number" name="idasesoria" placeholder="Ingresar ID Asesoría">&nbsp;
             <label>Fecha: </label>
 			<input id="fecha" type="text" name="fecha" placeholder="dd-mm-aaaa"/>
             <br><br>
             <label>ID Visitas:</label>
-            <input type="numeric" name="visitaid" placeholder="Ingresar ID Visitas">
+            <input type="number" name="visitaid" placeholder="Ingresar ID Visitas">
             <br><br>     
             <label>Detalle: </label><br>
             <textarea name="detalle" rows="5" cols="60" placeholder="Ingresar detalle de la asesoría con un máximo hasta 500 caracteres"></textarea>

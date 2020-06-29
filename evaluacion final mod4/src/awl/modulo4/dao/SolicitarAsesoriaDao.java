@@ -11,7 +11,7 @@ import awl.modulo4.conexion.ConexionSingleton;
 import awl.modulo4.idao.InterfazDao;
 import awl.modulo4.model.*;
 
-public class AsesoriaDao implements InterfazDao {
+public class SolicitarAsesoriaDao implements InterfazDao {
 
 	@Override
 	public boolean agregar(Asesoria asesoria) {
@@ -21,8 +21,10 @@ public class AsesoriaDao implements InterfazDao {
 		Statement stm = null;
 		Connection con = null;
 		
+	
+		
 		String sql = "INSERT INTO Asesorias VALUES ('" + asesoria.getIdasesoria() + "','" + asesoria.getDetalle() 
-		+ "','" + asesoria.getGestion() + "','" + asesoria.getPropuestas() + "','"+ asesoria.getFecha() + "','"+ asesoria.getEspecial() + "','"+ asesoria.getVisitaid() + "')";
+		+ "','" + asesoria.getGestion() + "','" + asesoria.getPropuestas() + "','"+ asesoria.getFecha() + "','"+ asesoria.getEspecial()+ "','"+ asesoria.getVisitaid() +"')";
 		
 		try {
 			con = ConexionSingleton.getConnection();
@@ -32,7 +34,7 @@ public class AsesoriaDao implements InterfazDao {
 			stm.close();
 			//con.close();
 		}catch(SQLException e) {
-			System.out.println("Error: Clase AsesoriaDao, método agregar");
+			System.out.println("Error: Clase Solicitar Asesoria Dao, metodo agregar");
 			e.printStackTrace();
 		}
 		
@@ -46,14 +48,15 @@ public class AsesoriaDao implements InterfazDao {
 		Statement stm = null;
 		ResultSet rs = null;
 		
-		String sql = "select * from Asesorias ORDER BY idasesoria";
+		String sql = "select * from Asesorias ORDER BY IDASESORIA";
 		
-		List<Asesoria> listaAsesoria= new ArrayList<Asesoria>();
+		List<Asesoria> listaAsesoria = new ArrayList<Asesoria>();
 		
 		try {
 			con = ConexionSingleton.getConnection();
 			stm = con.createStatement();
 			rs = stm.executeQuery(sql);
+			
 			while (rs.next()) {
 				Asesoria a = new Asesoria();
 				a.setIdasesoria(rs.getInt(1));
@@ -69,12 +72,15 @@ public class AsesoriaDao implements InterfazDao {
 			rs.close();
 			//con.close();
 		} catch(SQLException e) {
-			System.out.println("Error: Clase AsesoriaDao, método listar ");
+			System.out.println("Error: Clase AsesoriaDao, metodo listar ");
 			e.printStackTrace();
 		}
 		
-		return listaAsesoria;
+	return listaAsesoria; 
+	
+	
 	}
+
 
 	@Override
 	public boolean agregar(Cliente cliente) {
@@ -167,7 +173,7 @@ public class AsesoriaDao implements InterfazDao {
 	}
 
 	@Override
-	public Empleado buscarEmpleado(int empleadoid) {
+	public Empleado buscarEmpleado(int idempleado) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -208,4 +214,5 @@ public class AsesoriaDao implements InterfazDao {
 		return null;
 	}
 
-}
+	
+	}
