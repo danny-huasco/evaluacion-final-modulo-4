@@ -8,17 +8,23 @@ public class Asesoria {
 	private String propuestas;
 	private String fecha;
 	private String especial;
-	private int visitaid;
+	private int visitaid;	
 	
 	
-	
-	public Asesoria(String detalle, String gestion, String propuestas, String fecha, String especial, int visitaid) {
+	public Asesoria(int idasesoria, String detalle, String gestion, String propuestas, String fecha, String especial, int visitaid) {
+		this.idasesoria = idasesoria;
 		this.detalle = detalle;
 		this.gestion = gestion;
 		this.propuestas = propuestas;
 		this.fecha = fecha;
 		this.especial = especial;
 		this.visitaid = visitaid;
+	}
+
+
+
+	public Asesoria() {
+		// TODO Auto-generated constructor stub
 	}
 
 
