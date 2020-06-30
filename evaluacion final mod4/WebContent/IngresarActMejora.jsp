@@ -10,7 +10,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/jquery-ui.js"></script>
+	<script src="js/datepicker.js"></script>
+    
+    
     <title>Ingresar Actividad de Mejora</title>
   </head>
   <body>
@@ -42,7 +49,7 @@
               <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1"><b>></b></span>
               </div>
-              <input type="text" name="fecha"  class="col-6 input-group">
+              <input type="text" name="fecha" id="fecha" class="col-6 input-group">
           </div>
           <br><br>
           <div class="row">
