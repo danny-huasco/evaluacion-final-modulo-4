@@ -1,6 +1,7 @@
 package awl.modulo4.dao;
 
-import java.sql.Connection;
+
+import java.sql.Connection; 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -8,16 +9,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 import awl.modulo4.conexion.ConexionSingleton;
+<<<<<<< HEAD
 import awl.modulo4.idao.InterfazDao;
 import awl.modulo4.model.Accidente;
 import awl.modulo4.model.Asesoria;
 import awl.modulo4.model.Capacitacion;
 import awl.modulo4.model.Chequeo;
+=======
+>>>>>>> 40300aeb6a56e9f7fc319163b04e001b577be357
 import awl.modulo4.model.Cliente;
 import awl.modulo4.model.Empleado;
 import awl.modulo4.model.Mejora;
 import awl.modulo4.model.Pago;
 import awl.modulo4.model.Visita;
+
+<<<<<<< HEAD
+=======
+import awl.modulo4.idao.InterfazDao;
+import awl.modulo4.model.*;
 
 public class ClienteDao implements InterfazDao {
 
@@ -29,7 +38,8 @@ public class ClienteDao implements InterfazDao {
 		Statement stm = null;
 		Connection con = null;
 		
-		String sql = "INSERT INTO Cliente VALUES (null,'" + cliente.getNombre() + "','" + cliente.getTelefono() 
+		String sql = "INSERT INTO Cliente VALUES ('" + cliente.getIdCliente()  + "','" + cliente.getNombre() + "','" + cliente.getTelefono() 
+
 		+ "','" + cliente.getCorreoelectronico() + "','" + cliente.getRubro() + "','"+ cliente.getDireccion() + "')";
 		
 		try {
@@ -49,6 +59,8 @@ public class ClienteDao implements InterfazDao {
 
 	@Override
 	public List<Cliente> listarCliente() {
+
+
 		// TODO Auto-generated method stub
 		Connection con = null;
 		Statement stm = null;
@@ -91,7 +103,8 @@ public class ClienteDao implements InterfazDao {
 		
 		boolean actualizar = false;
 		
-		String sql = "UPDATE Cliente SET nombre = '" + cliente.getNombre() + "', telefono = '" + cliente.getTelefono() + "', correoelectronico = '" + cliente.getCorreoelectronico() + "', rubro = '" + cliente.getRubro() + "', direccion = '" + cliente.getDireccion() + "' WHERE id = '" + cliente.getIdCliente() + "'";
+		String sql = "UPDATE Cliente SET ID = '" + cliente.getIdCliente()  + "', nombre = '" + cliente.getNombre() + "', telefono = '" + cliente.getTelefono() + "', correoelectronico = '" + cliente.getCorreoelectronico() + "', rubro = '" + cliente.getRubro() + "', direccion = '" + cliente.getDireccion() + "' WHERE id = '" + cliente.getIdCliente() + "'";
+
 		
 		try {
 			con = ConexionSingleton.getConnection();
@@ -222,7 +235,7 @@ public class ClienteDao implements InterfazDao {
 	}
 
 	@Override
-	public List<Cliente> listarEmpleado() {
+	public List<Empleado> listarEmpleado() {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -264,7 +277,7 @@ public class ClienteDao implements InterfazDao {
 	}
 
 	@Override
-	public List<Mejora> listarPagos() {
+	public List<Pago> listarPagos() {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -276,7 +289,8 @@ public class ClienteDao implements InterfazDao {
 	}
 
 	@Override
-	public List<Mejora> listarVisita() {
+	public List<Visita> listarVisita() {
+
 		// TODO Auto-generated method stub
 		return null;
 	}
