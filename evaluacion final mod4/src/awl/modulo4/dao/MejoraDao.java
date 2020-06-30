@@ -28,7 +28,7 @@ public class MejoraDao implements InterfazDao{
 		Statement stm = null;
 		Connection con = null;
 		
-		String sql = "INSERT INTO mejoras VALUES ('"+ mejora.getIdmejora() +" ','" + mejora.getFecha() + "','" + mejora.getMotivo() 
+		String sql = "INSERT INTO mejoras VALUES ('" + mejora.getIdmejora() + "','" + mejora.getFecha() + "','" + mejora.getMotivo() 
 		+ "','" + mejora.getActividades() + "','" + mejora.getEstado() + "','"+ mejora.getClienteid() + "')";
 		
 		try {
@@ -52,8 +52,8 @@ public class MejoraDao implements InterfazDao{
 		Statement stm = null;
 		ResultSet rs = null;
 		
-		String sql = "select * from mejoras ORDER BY ID";
-		
+		String sql = "select * from mejoras ORDER BY idmejora";
+
 		List<Mejora> listaMejora = new ArrayList<Mejora>();
 		
 		try {
@@ -166,7 +166,7 @@ public class MejoraDao implements InterfazDao{
 	}
 
 	@Override
-	public List<Cliente> listarEmpleado() {
+	public List<Empleado> listarEmpleado() {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -213,3 +213,4 @@ public class MejoraDao implements InterfazDao{
 		return null;
 	}
 }
+

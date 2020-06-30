@@ -25,17 +25,19 @@ public interface InterfazDao {
 	public List<Chequeo> listarChequeo();
 	//empleado
 	public boolean agregar(Empleado empleado);
-	public List<Cliente> listarEmpleado();
+	public List<Empleado> listarEmpleado();
 	public boolean actualizar(Empleado empleado);
 	public boolean eliminar (Empleado empleado);
-	public Empleado buscarEmpleado(int idempleado);
+	public Empleado buscarEmpleado(int empleadoid);
 	//mejora
 	public boolean agregar(Mejora mejora);
 	public List<Mejora> listarMejoras();
 	//pago 
 	public boolean agregar(Pago pago);
+
 	public List<Pago> listarPagos();
 	//visita
 	public boolean agregar(Visita visita);
 	public List<Visita> listarVisita();
 }
+

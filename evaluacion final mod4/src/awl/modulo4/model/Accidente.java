@@ -8,16 +8,18 @@ public class Accidente {
 	private String suceso;
 	private String lugar;
 	private int clienteid;
-	
-	
-	
-	
-	public Accidente(String fecha, String hora, String suceso, String lugar, int clienteid) {
+
+	public Accidente(int idaccidente, String fecha, String hora, String suceso, String lugar, int clienteid) {
+		this.idaccidente = idaccidente;
 		this.fecha = fecha;
 		this.hora = hora;
 		this.suceso = suceso;
 		this.lugar = lugar;
 		this.clienteid = clienteid;
+	}
+
+	public Accidente() {
+		// TODO Auto-generated constructor stub
 	}
 
 
@@ -106,8 +108,6 @@ public class Accidente {
 		return "Accidente [idaccidente=" + idaccidente + ", fecha=" + fecha + ", hora=" + hora + ", suceso=" + suceso
 				+ ", lugar=" + lugar + ", clienteid=" + clienteid + "]";
 	}
-	
-	
 	
 	
 }

@@ -36,32 +36,21 @@ public class AgregarActMejora extends HttpServlet {
 		request.getRequestDispatcher("IngresarActMejora.jsp").forward(request, response);
 	}
 
-	/** 
+	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
 		
-	//	public boolean isValidDate(String dateString) {
-		//       SimpleDateFormat df = new SimpleDateFormat("yyyyMMdd");
-		  //     try {
-		    //       df.parse(dateString);
-		      //     return true;
-		       //} catch (ParseException e) {
-		         //  return false;
-		       //}
-		//}
-		
-		int idMejora = Integer.parseInt(request.getParameter("idMejora").trim());
+		int idmejora = Integer.parseInt(request.getParameter("idMejora"));
 		String fecha = request.getParameter("fecha");
-		//if (Integer.parseInt(fecha.substring(0, 1))<1 && Integer.parseInt(fecha.substring(0, 1)>31))
 		String motivo = request.getParameter("motivo");
 		String actividades = request.getParameter("actividades");		
 		String estado = request.getParameter("radiob");
-		int id_cliente = Integer.parseInt(request.getParameter("idCliente"));
+		int clienteid = Integer.parseInt(request.getParameter("idCliente"));
 		
-		Mejora mej = new Mejora(idMejora, fecha, motivo, actividades, estado, id_cliente);
+		Mejora mej = new Mejora(idmejora,fecha, motivo,actividades,estado,clienteid);
 		MejoraDao mejDao = new MejoraDao();
 		
 		boolean agregar = false;
@@ -82,3 +71,4 @@ public class AgregarActMejora extends HttpServlet {
 	}
 
 }
+
