@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/estilos.css" />
 	</head>
 	<body>
+<<<<<<< HEAD
 
 <div class="container-md text-center" >
   <h1 class="display-4">Pagina Inicio </h1>
@@ -46,9 +47,26 @@
 </div>
 </div>
 
+=======
+	<h1>Página de inicio</h1>
+
+	<h3>¿Qué acción desea realizar?</h3>
+
+<ul>
+<li><a href="${pageContext.request.contextPath}/ListadoClientes">Administrar clientes</a></li>
+<li>Administrar empleados</li>
+</ul>
+		
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+<<<<<<< HEAD
 </body>
 </html>
+=======
+    </body>
+
+</html>
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7

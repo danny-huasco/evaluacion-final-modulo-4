@@ -10,16 +10,10 @@ import java.util.List;
 
 import awl.modulo4.conexion.ConexionSingleton;
 
-import awl.modulo4.model.Cliente;
-import awl.modulo4.model.Empleado;
-import awl.modulo4.model.Mejora;
-import awl.modulo4.model.Pago;
-import awl.modulo4.model.Visita;
-
 import awl.modulo4.idao.InterfazDao;
 import awl.modulo4.model.*;
 
-public class ClienteDao implements InterfazDao {
+public class ClienteDao implements InterfazDao{
 
 	@Override
 	public boolean agregar(Cliente cliente) {
@@ -48,10 +42,9 @@ public class ClienteDao implements InterfazDao {
 		return agregar;
 	}
 
+
 	@Override
 	public List<Cliente> listarCliente() {
-
-
 		// TODO Auto-generated method stub
 		Connection con = null;
 		Statement stm = null;
@@ -137,6 +130,7 @@ public class ClienteDao implements InterfazDao {
 		return eliminar;
 	}
 
+
 	@Override
 	public Cliente buscarCliente(int clienteid) {
 		// TODO Auto-generated method stub
@@ -169,6 +163,18 @@ public class ClienteDao implements InterfazDao {
 		}
 		
 		return cli;
+	}
+
+	@Override
+	public List<Cliente> listarCliente() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Cliente buscarCliente(int clienteid) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override

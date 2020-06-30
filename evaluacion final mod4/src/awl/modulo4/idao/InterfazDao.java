@@ -28,13 +28,20 @@ public interface InterfazDao {
 	public List<Empleado> listarEmpleado();
 	public boolean actualizar(Empleado empleado);
 	public boolean eliminar (Empleado empleado);
+<<<<<<< HEAD
 	public Empleado buscarEmpleado(int empleadoid);
+=======
+	public Empleado buscarEmpleado(int idempleado);
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 	//mejora
 	public boolean agregar(Mejora mejora);
 	public List<Mejora> listarMejoras();
 	//pago 
 	public boolean agregar(Pago pago);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 	public List<Pago> listarPagos();
 	//visita
 	public boolean agregar(Visita visita);
