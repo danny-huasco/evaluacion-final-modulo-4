@@ -28,7 +28,7 @@ public class MejoraDao implements InterfazDao{
 		Statement stm = null;
 		Connection con = null;
 		
-		String sql = "INSERT INTO mejoras VALUES (' mejora.getIdmejora() "+" ','" + mejora.getFecha() + "','" + mejora.getMotivo() 
+		String sql = "INSERT INTO mejoras VALUES ('"+ mejora.getIdmejora() +" ','" + mejora.getFecha() + "','" + mejora.getMotivo() 
 		+ "','" + mejora.getActividades() + "','" + mejora.getEstado() + "','"+ mejora.getClienteid() + "')";
 		
 		try {

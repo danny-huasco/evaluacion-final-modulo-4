@@ -1,6 +1,8 @@
 package awl.modulo4.controlador;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -41,14 +43,25 @@ public class AgregarActMejora extends HttpServlet {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
 		
-		int idMejora = Integer.parseInt(request.getParameter("idMejora"));
+	//	public boolean isValidDate(String dateString) {
+		//       SimpleDateFormat df = new SimpleDateFormat("yyyyMMdd");
+		  //     try {
+		    //       df.parse(dateString);
+		      //     return true;
+		       //} catch (ParseException e) {
+		         //  return false;
+		       //}
+		//}
+		
+		int idMejora = Integer.parseInt(request.getParameter("idMejora").trim());
 		String fecha = request.getParameter("fecha");
+		//if (Integer.parseInt(fecha.substring(0, 1))<1 && Integer.parseInt(fecha.substring(0, 1)>31))
 		String motivo = request.getParameter("motivo");
 		String actividades = request.getParameter("actividades");		
 		String estado = request.getParameter("radiob");
 		int id_cliente = Integer.parseInt(request.getParameter("idCliente"));
 		
-		Mejora mej = new Mejora(fecha, motivo, actividades, estado, id_cliente);
+		Mejora mej = new Mejora(idMejora, fecha, motivo, actividades, estado, id_cliente);
 		MejoraDao mejDao = new MejoraDao();
 		
 		boolean agregar = false;

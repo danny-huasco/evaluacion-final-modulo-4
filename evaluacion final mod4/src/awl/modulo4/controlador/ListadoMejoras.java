@@ -40,7 +40,7 @@ public class ListadoMejoras extends HttpServlet {
 		listaMej = mdao.listarMejoras();
 		
 		request.setAttribute("listaMejoras", listaMej);
-		request.getRequestDispatcher("MostrarActividadMejora.jsp").forward(request, response);
+		request.getRequestDispatcher("ListarMejoras.jsp").forward(request, response);
 	}
 
 	/**

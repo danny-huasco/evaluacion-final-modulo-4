@@ -19,7 +19,9 @@ public class Mejora {
 		this.estado = "";
 		this.clienteid = 001;
 	}
-	public Mejora(String fecha, String motivo, String actividades, String estado, int clienteid) {
+	public Mejora(int idMejora, String fecha, String motivo, String actividades, String estado, int clienteid) {
+		
+		this.idmejora = idMejora;
 		this.fecha = fecha;
 		this.motivo = motivo;
 		this.actividades = actividades;
