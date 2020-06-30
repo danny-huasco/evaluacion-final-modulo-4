@@ -1,136 +1,102 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
- <!-- Required meta tags -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos.css">
-      <!-- CSS
-  ================================================== -->
-  <!-- Themefisher Icon font -->
-  <link rel="stylesheet" href="plugins/themefisher-font.v-2/style.css">
-  <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
-  <!-- Slick Carousel -->
-  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
-  <!--================================================== -->
-  <title>Ingresar Asesoria </title>
-<!--================================================== -->
-  <title>jQuery UI Datepicker - Default functionality</title>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="https://resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-      $( "#datepicker" ).datepicker();
-    } );
-  </script>                      
-</head>
-<body>
-
-
-    <header class="jumbotron text-center" style="margin-bottom:0" id="cabeceracarlos">
-        <h1> Ingresar Asesoria  </h1>
-       
-    </header>
-
-    <div id="preloader">
-        <div class="preloader">
-          <div class="sk-circle1 sk-child"></div>
-          <div class="sk-circle2 sk-child"></div>
-          <div class="sk-circle3 sk-child"></div>
-          <div class="sk-circle4 sk-child"></div>
-          <div class="sk-circle5 sk-child"></div>
-          <div class="sk-circle6 sk-child"></div>
-          <div class="sk-circle7 sk-child"></div>
-          <div class="sk-circle8 sk-child"></div>
-          <div class="sk-circle9 sk-child"></div>
-          <div class="sk-circle10 sk-child"></div>
-          <div class="sk-circle11 sk-child"></div>
-          <div class="sk-circle12 sk-child"></div>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Ingreso</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+        <header class="text-center">
+            <h2>Ingresar Asesoria</h2>
+        </header>
+    </div> 
+     <form action="">  
+      <div class="container">
+          <div class="row">
+             <label class="col-4" for=""><h5>Ingresar Asesoria:</h5></label>
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><b>></b></span>
+              </div>              
+              <input type=" text" class="col-6 input-group">
+          </div>
+          <br><br>
+          <div class="row">
+              <label class="col-4" for=""><h5>Id Asesoria:</h5></label>
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><b>></b></span>
+              </div>
+              <input type=" text" class="col-6 input-group">
+          </div>
+          <br><br>
+          <div class="row">
+              <label class="col-4" for=""><h5>Detalle:</h5></label>
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><b>></b></span>
+              </div>
+              <input type=" text" class="col-6 input-group">
+          </div>
+          <br><br>
+          <div class="row">
+              <label class="col-4" for=""><h5>Gestion:</h5></label>
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><b>></b></span>
+              </div>
+              <input type=" text" class="col-6 input-group">
+          </div>
+          <br><br>
+          <div class="row">
+              <label class="col-4" for=""><h5>Propuestas:</h5></label>
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><b>></b></span>
+              </div>
+              <input type=" text" class="col-6 input-group">
+          </div>
+          <br><br>
+          <div class="row">
+              <label class="col-4" for=""><h5>Fecha:</h5></label>
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><b>></b></span>
+              </div>
+              <input type=" text" class="col-6 input-group">
+          </div>
+          <br><br>
+          <div class="row">
+              <label class="col-4" for=""><h5>Asesoria Especial:</h5></label>
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><b>></b></span>
+              </div>
+              <input type=" text" class="col-6 input-group">
+          </div>
+           <br><br>
+          <div class="row">
+              <label class="col-4" for=""><h5>Id Visita:</h5></label>
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><b>></b></span>
+              </div>
+              <input type=" text" class="col-6 input-group">
+          </div>
+          <br><br><br>
+           <div class="row">
+               <div class="container" style="max-width:55%">
+                <input type="submit" class="btn btn-warning col-4" value="volver" formaction="${pageContext.request.contextPath}/ListadoClientes">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="submit" class="btn btn-warning col-4" value="aceptar">
+               </div>
+           </div>          
         </div>
-      </div> 
-
-      <!-- Srart Contact Us =========================================== -->		
-	<section class="contact-us section bg-gray" id="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="title text-center">
-						
-						<span class="border"></span>
-                    </div>
-				</div>
-			</div>
-			<div class="row">
-				<!-- Contact Form -->
-				<div class="contact-form col-12 col-md-6  mx-auto" >
-				
-				
-					<form id="contact-form" method="post" action="IngresarAsesoria" role="form">
-					
-                        <div class="form-group">
-                            <input type="number" placeholder="Id Asesoria" class="form-control" name="idasesoria" >
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="number" placeholder="Detalle " class="form-control" name="detalle" >
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" placeholder="Gestion" class="form-control" name="gestion">
-                        </div>
-
-
-                        <div class="form-group">
-                            <input type="text" placeholder="Propuestas" class="form-control" name="propuestas" >
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" placeholder="Fecha" class="form-control" name="fecha" id="datepicker" >                         
-                        </div>
-
-                        <div class="form-group">
-                        <label>Asesoria Especial: </label>&nbsp;
-                            <input type="text" placeholder="Asesoria especial" class="form-control" name="especial" >	
-                        </div>
-
-                       <div class="form-group">
-                            <input type="number" placeholder="Visita id" class="form-control" name="visitaid" >	
-                        </div>
-
-                        <div id="cf-submit">
-                           <button type="submit" class="btn btn-transparent" id="contact-submit"> Enviar</button>
-                        </div>
-                        
-						
-					</form>
-				<a href="${pageContext.request.contextPath}/ListadoAsesoria">Volver al Listado de Asesorias </a>
-				</div>
-			</div> <!-- end row -->
-			
-		</div> <!-- end container -->
-	</section> <!-- end section -->
-
-        <!-- Main jQuery -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Owl Carousel -->
-    <script src="js/slick.min.js"></script>
-    <script src="js/plotly-latest.min.js"></script>
-    <!-- Smooth Scroll js -->
-    <script src="js/smooth-scroll.min.js"></script>
-  
-
-</body>
+      </form> 
+      <div class="container" style="height: 50px;"></div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
 </html>
