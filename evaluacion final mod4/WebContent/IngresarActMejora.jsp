@@ -1,94 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-<<<<<<< HEAD
-<!doctype html>
-<html lang="en">
-=======
 <!DOCTYPE html>
 <html lang="es">
->>>>>>> branch 'dev4' of https://github.com/danny-huasco/evaluacion-final-modulo-4.git
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-<<<<<<< HEAD
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <title>Agregar Actividades de Mejora</title>
-  </head>
-  <body>
-    <div class="jumbotron">
-        <header class="text-center">
-            <h2>Agregar Actividades de Mejora</h2>
-        </header>
-    </div> 
-     <form method="post" action="AgregarActMejora">
-      <div class="container">
-          <div class="row">
-             <label class="col-4"><h5>ID Actividad:</h5></label>
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"><b>></b></span>
-              </div>              
-              <input type="number" class="col-6 input-group" name="idMejora">
-          </div>
-          <br><br>
-          <div class="row">
-              <label class="col-4"><h5>ID Cliente:</h5></label>
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"><b>></b></span>
-              </div>
-              <input type="number" class="col-6 input-group" name="idCliente">
-          </div>
-          <br><br>
-          <div class="row">
-              <label class="col-4"><h5>Fecha:</h5></label>
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"><b>></b></span>
-              </div>
-              <input type="text" class="col-6 input-group" name="fecha">
-          </div>
-          <br><br>
-          <div class="row">
-              <label class="col-4"><h5>Monto Adicionales:</h5></label>
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"><b>></b></span>
-              </div>
-              <input type="number" class="col-6 input-group" name="montoadicionales">
-          </div>
-          <br><br>
-          <div class="row">
-              <label class="col-4"><h5>Motivo:</h5></label>
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"><b>></b></span>
-              </div>
-              <input type="text" class="col-6 input-group" name="motivo">
-          </div>
-          <br><br>
-          <div class="row">
-              <label class="col-4"><h5>Actividades:</h5></label>
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"><b>></b></span>
-              </div>
-              <input type="text" class="col-6 input-group" name="motivo">
-          </div>
-          <br><br>
-                <c:if test="${ccmensaje != null}">
-					<h3><c:out value="${ccmensaje}"></c:out></h3>
-				</c:if>
-          <br><br><br>
-           <div class="row">
-               <div class="container" style="max-width:55%">
-               <input type="submit" class="btn btn-warning col-4" value="Listado de Mejoras" formaction="${pageContext.request.contextPath}/ListadoMejoras">
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="submit" class="btn btn-warning col-4" value="Crear">
-               </div>
-           </div>          
-        </div>
-      </form> 
-      <div class="container" style="height: 50px;"></div>
-=======
 	<link rel="stylesheet" href="css/estilos.css" />
     <title>Ingresar Actividad de Mejora</title>
     
@@ -109,6 +28,7 @@
 			  <input type="number" name="idMejora" class="form-control" aria-label="id actividad" aria-describedby="basic-addon1">
 			</div>
 			<br />
+
 	    	<div class="input-group mb-3">
 			  <div class="input-group-prepend">
 			    <span class="input-group-text" id="basic-addon1">ID Cliente</span>
@@ -155,20 +75,11 @@
 
     	</form>
     </div>
->>>>>>> branch 'dev4' of https://github.com/danny-huasco/evaluacion-final-modulo-4.git
     
-<<<<<<< HEAD
-    <!-- Optional JavaScript -->
-=======
 
         <!-- Optional JavaScript -->
->>>>>>> branch 'dev4' of https://github.com/danny-huasco/evaluacion-final-modulo-4.git
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<<<<<<< HEAD
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
-=======
     <script src="js/jquery-3.5.1.min.js"></script>
->>>>>>> branch 'dev4' of https://github.com/danny-huasco/evaluacion-final-modulo-4.git
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
