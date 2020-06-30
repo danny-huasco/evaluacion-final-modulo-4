@@ -7,7 +7,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+<<<<<<< HEAD
+=======
 import awl.modulo4.dao.MejoraDao;
+>>>>>>> 40300aeb6a56e9f7fc319163b04e001b577be357
 import awl.modulo4.model.Mejora;
 
 /**
@@ -34,7 +37,8 @@ public class AgregarActMejora extends HttpServlet {
 		request.getRequestDispatcher("IngresarActMejora.jsp").forward(request, response);
 	}
 
-	/** 
+
+	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -69,3 +73,4 @@ public class AgregarActMejora extends HttpServlet {
 	}
 
 }
+

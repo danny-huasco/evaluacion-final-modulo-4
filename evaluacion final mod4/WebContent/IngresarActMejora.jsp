@@ -19,6 +19,7 @@
     	<c:if test="${ccmensaje != null}">
 			<h3><c:out value="${ccmensaje}"></c:out></h3>
 		</c:if>
+
     	<form action="AgregarActMejora" method="post">
     		<div class="input-group mb-3">
 			  <div class="input-group-prepend">
@@ -27,6 +28,7 @@
 			  <input type="number" name="idMejora" class="form-control" aria-label="id actividad" aria-describedby="basic-addon1">
 			</div>
 			<br />
+
 	    	<div class="input-group mb-3">
 			  <div class="input-group-prepend">
 			    <span class="input-group-text" id="basic-addon1">ID Cliente</span>

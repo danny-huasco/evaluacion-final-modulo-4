@@ -9,8 +9,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 import awl.modulo4.conexion.ConexionSingleton;
+<<<<<<< HEAD
+import awl.modulo4.idao.InterfazDao;
+import awl.modulo4.model.Accidente;
+import awl.modulo4.model.Asesoria;
+import awl.modulo4.model.Capacitacion;
+import awl.modulo4.model.Chequeo;
+=======
+>>>>>>> 40300aeb6a56e9f7fc319163b04e001b577be357
 import awl.modulo4.model.Cliente;
+import awl.modulo4.model.Empleado;
+import awl.modulo4.model.Mejora;
+import awl.modulo4.model.Pago;
+import awl.modulo4.model.Visita;
 
+<<<<<<< HEAD
+=======
 import awl.modulo4.idao.InterfazDao;
 import awl.modulo4.model.*;
 
@@ -44,8 +58,8 @@ public class ClienteDao implements InterfazDao {
 	}
 
 	@Override
-
 	public List<Cliente> listarCliente() {
+
 
 		// TODO Auto-generated method stub
 		Connection con = null;
@@ -133,9 +147,7 @@ public class ClienteDao implements InterfazDao {
 	}
 
 	@Override
-
 	public Cliente buscarCliente(int clienteid) {
-
 		// TODO Auto-generated method stub
 		Connection con = null;
 		Statement stm = null;
@@ -278,6 +290,7 @@ public class ClienteDao implements InterfazDao {
 
 	@Override
 	public List<Visita> listarVisita() {
+
 		// TODO Auto-generated method stub
 		return null;
 	}

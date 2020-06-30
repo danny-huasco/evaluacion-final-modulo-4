@@ -12,7 +12,6 @@ public class ConexionSingleton {
 	
 	private ConexionSingleton() {
 		url = "jdbc:oracle:thin:@clase003.ddns.net:1700:xe";
-
 		driver = "oracle.jdbc.driver.OracleDriver";
 		usuario = "UCH";
 		password = "1234";
