@@ -5,37 +5,23 @@ public class Pago {
 	private int idpago;
 	private String mesanio;
 	private int montoregular;
-	private int montoadicional;
-	private int clienteid;
-	
-	
-	
-	
-<<<<<<< HEAD
-	public Pago(String mesanio, int montoregular, int montoadicional, int clienteid) {
-=======
-	public Pago(int idpago, String mesanio, int montoregular, int montoadicional, int clienteid) {
-		this.idpago = idpago;
->>>>>>> c057e94947c259392f06c9737ea5a2d5d0a2c243
-		this.mesanio = mesanio;
-		this.montoregular = montoregular;
-		this.montoadicional = montoadicional;
-		this.clienteid = clienteid;
-	}
+	private int montoadicionales;
+	private int idcliente;
 
 
-
-
-<<<<<<< HEAD
-=======
 	public Pago() {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Pago(int idpago, String mesanio, int montoregular, int montoadicionales, int idcliente) {
+		this.idpago = idpago;
+		this.mesanio = mesanio;
+		this.montoregular = montoregular;
+		this.montoadicionales = montoadicionales;
+		this.idcliente = idcliente;
+	}
 
 
-
->>>>>>> c057e94947c259392f06c9737ea5a2d5d0a2c243
 	public int getIdpago() {
 		return idpago;
 	}
@@ -48,13 +34,9 @@ public class Pago {
 	}
 
 
-
-
 	public String getMesanio() {
 		return mesanio;
 	}
-
-
 
 
 	public void setMesanio(String mesanio) {
@@ -62,13 +44,9 @@ public class Pago {
 	}
 
 
-
-
 	public int getMontoregular() {
 		return montoregular;
 	}
-
-
 
 
 	public void setMontoregular(int montoregular) {
@@ -76,40 +54,30 @@ public class Pago {
 	}
 
 
+	public int getMontoadicionales() {
+		return montoadicionales;
+	}
 
 
-	public int getMontoadicional() {
-		return montoadicional;
+	public void setMontoadicionales(int montoadicionales) {
+		this.montoadicionales = montoadicionales;
+	}
+
+
+	public int getIdCliente() {
+		return idcliente;
 	}
 
 
 
-
-	public void setMontoadicional(int montoadicional) {
-		this.montoadicional = montoadicional;
+	public void setIdCliente(int idcliente) {
+		this.idcliente = idcliente;
 	}
-
-
-
-
-	public int getClienteid() {
-		return clienteid;
-	}
-
-
-
-
-	public void setClienteid(int clienteid) {
-		this.clienteid = clienteid;
-	}
-
-
 
 
 	@Override
 	public String toString() {
-		return "Pago [idpago=" + idpago + ", mesanio=" + mesanio + ", montoregular=" + montoregular
-				+ ", montoadicional=" + montoadicional + ", clienteid=" + clienteid + "]";
+		return "Pago [idpago=" + idpago + ", mesanio=" + mesanio + ", montoregular=" + montoregular + ", montoadicionales=" + montoadicionales + ", idcliente=" + idcliente + "]";
 	}
 	
 	

@@ -38,7 +38,7 @@ public class ListadoClientes extends HttpServlet {
 		
 		ClienteDao cdao = new ClienteDao();
 		List<Cliente> listacli = new ArrayList<Cliente>();
-		listacli = cdao.listar();
+		listacli = cdao.listarCliente();
 				
 		request.setAttribute("listaclientes", listacli);
 		request.getRequestDispatcher("ListarClientes.jsp").forward(request, response);		

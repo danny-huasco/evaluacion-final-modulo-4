@@ -52,7 +52,8 @@ public class EliminarCliente extends HttpServlet {
 			mensaje = "Ocurrió un error al procesar la solicitud";
 
 		List<Cliente> listacli = new ArrayList<Cliente>();
-		listacli = clientedao.listar();				
+		listacli = clientedao.listarCliente();				
+
 		request.setAttribute("listaclientes", listacli);
 		
 		request.setAttribute("ccmensaje", mensaje);
