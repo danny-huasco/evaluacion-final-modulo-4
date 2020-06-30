@@ -9,6 +9,10 @@ public class Pago {
 	private int idcliente;
 
 
+	public Pago() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public Pago(int idpago, String mesanio, int montoregular, int montoadicionales, int idcliente) {
 		this.idpago = idpago;
 		this.mesanio = mesanio;
@@ -17,9 +21,6 @@ public class Pago {
 		this.idcliente = idcliente;
 	}
 
-	public Pago() {
-		// TODO Auto-generated constructor stub
-	}
 
 	public int getIdpago() {
 		return idpago;
