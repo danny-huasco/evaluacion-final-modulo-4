@@ -9,7 +9,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <!-- Bootstrap CSS -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/bootstrap.min.css">
+=======
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
     <link rel="stylesheet" href="estilos.css">
       <!-- CSS
   ================================================== -->
@@ -97,9 +101,14 @@
                         <div class="form-group">
                             <input type="text" placeholder="Fecha" class="form-control" name="fecha" id="datepicker" >                         
                         </div>
+<<<<<<< HEAD
 
                         <div class="form-group">
                         <label>Asesoria Especial: </label>&nbsp;
+=======
+                        
+                        <div class="form-group">
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
                             <input type="text" placeholder="Asesoria especial" class="form-control" name="especial" >	
                         </div>
 
@@ -113,13 +122,17 @@
                         
 						
 					</form>
+<<<<<<< HEAD
 				<a href="${pageContext.request.contextPath}/ListadoAsesoria">Volver al Listado de Asesorias </a>
+=======
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 				</div>
 			</div> <!-- end row -->
 			
 		</div> <!-- end container -->
 	</section> <!-- end section -->
 
+<<<<<<< HEAD
         <!-- Main jQuery -->
     <script src="js/jquery.min.js"></script>
     <!-- Bootstrap -->
@@ -130,6 +143,24 @@
     <script src="js/plotly-latest.min.js"></script>
     <!-- Smooth Scroll js -->
     <script src="js/smooth-scroll.min.js"></script>
+=======
+
+   
+
+      <!-- Main jQuery -->
+    <script src="plugins/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="plugins/bootstrap/dist/js/popper.min.js"></script>
+    <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Smooth Scroll js -->
+    <script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    
+    <!-- Custom js -->
+    <script src="js/script.js"></script>
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
   
 
 </body>

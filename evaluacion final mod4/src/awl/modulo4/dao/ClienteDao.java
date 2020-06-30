@@ -10,23 +10,32 @@ import java.util.List;
 
 import awl.modulo4.conexion.ConexionSingleton;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 import awl.modulo4.idao.InterfazDao;
 import awl.modulo4.model.Accidente;
 import awl.modulo4.model.Asesoria;
 import awl.modulo4.model.Capacitacion;
 import awl.modulo4.model.Chequeo;
+<<<<<<< HEAD
 =======
 >>>>>>> 40300aeb6a56e9f7fc319163b04e001b577be357
+=======
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 import awl.modulo4.model.Cliente;
 import awl.modulo4.model.Empleado;
 import awl.modulo4.model.Mejora;
 import awl.modulo4.model.Pago;
 import awl.modulo4.model.Visita;
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
 import awl.modulo4.idao.InterfazDao;
 import awl.modulo4.model.*;
+=======
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 
 public class ClienteDao implements InterfazDao {
 
@@ -57,10 +66,14 @@ public class ClienteDao implements InterfazDao {
 		return agregar;
 	}
 
+<<<<<<< HEAD
 	@Override
 	public List<Cliente> listarCliente() {
 
 
+=======
+	public List<Cliente> listar() {
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 		// TODO Auto-generated method stub
 		Connection con = null;
 		Statement stm = null;
@@ -146,8 +159,12 @@ public class ClienteDao implements InterfazDao {
 		return eliminar;
 	}
 
+<<<<<<< HEAD
 	@Override
 	public Cliente buscarCliente(int clienteid) {
+=======
+	public Cliente buscar(int clienteid) {
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 		// TODO Auto-generated method stub
 		Connection con = null;
 		Statement stm = null;
@@ -181,6 +198,21 @@ public class ClienteDao implements InterfazDao {
 	}
 
 	@Override
+<<<<<<< HEAD
+=======
+	public List<Cliente> listarCliente() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Cliente buscarCliente(int clienteid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 	public boolean agregar(Accidente accidente) {
 		// TODO Auto-generated method stub
 		return false;
@@ -290,7 +322,10 @@ public class ClienteDao implements InterfazDao {
 
 	@Override
 	public List<Visita> listarVisita() {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 		// TODO Auto-generated method stub
 		return null;
 	}

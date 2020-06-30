@@ -9,7 +9,19 @@ import java.util.List;
 
 import awl.modulo4.conexion.ConexionSingleton;
 import awl.modulo4.idao.InterfazDao;
+<<<<<<< HEAD
 import awl.modulo4.model.*;
+=======
+import awl.modulo4.model.Accidente;
+import awl.modulo4.model.Asesoria;
+import awl.modulo4.model.Capacitacion;
+import awl.modulo4.model.Chequeo;
+import awl.modulo4.model.Cliente;
+import awl.modulo4.model.Empleado;
+import awl.modulo4.model.Mejora;
+import awl.modulo4.model.Pago;
+import awl.modulo4.model.Visita;
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 
 public class AsesoriaDao implements InterfazDao {
 
@@ -21,8 +33,14 @@ public class AsesoriaDao implements InterfazDao {
 		Statement stm = null;
 		Connection con = null;
 		
+<<<<<<< HEAD
 		String sql = "INSERT INTO Asesorias VALUES ('" + asesoria.getIdasesoria() + "','" + asesoria.getDetalle() 
 		+ "','" + asesoria.getGestion() + "','" + asesoria.getPropuestas() + "','"+ asesoria.getFecha() + "','"+ asesoria.getEspecial() + "','"+ asesoria.getVisitaid() + "')";
+=======
+		String sql = "INSERT INTO Asesorias VALUES ('" + asesoria.getIdasesoria() + "','" + asesoria.getDetalle() + "','" + asesoria.getGestion() 
+		+ "','" + asesoria.getPropuestas() + "','"+ asesoria.getFecha() + "','" + asesoria.getEspecial() 
+		+ "','" + asesoria.getVisitaid() +"')";
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 		
 		try {
 			con = ConexionSingleton.getConnection();
@@ -39,8 +57,12 @@ public class AsesoriaDao implements InterfazDao {
 		return agregar;
 	}
 
+<<<<<<< HEAD
 	@Override
 	public List<Asesoria> listarAsesoria() {
+=======
+	public List<Asesoria> listar() {
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 		// TODO Auto-generated method stub
 		Connection con = null;
 		Statement stm = null;
@@ -48,13 +70,18 @@ public class AsesoriaDao implements InterfazDao {
 		
 		String sql = "select * from Asesorias ORDER BY idasesoria";
 		
+<<<<<<< HEAD
 		List<Asesoria> listaAsesoria= new ArrayList<Asesoria>();
+=======
+		List<Asesoria> listaAsesoria = new ArrayList<Asesoria>();
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 		
 		try {
 			con = ConexionSingleton.getConnection();
 			stm = con.createStatement();
 			rs = stm.executeQuery(sql);
 			while (rs.next()) {
+<<<<<<< HEAD
 				Asesoria a = new Asesoria();
 				a.setIdasesoria(rs.getInt(1));
 				a.setDetalle(rs.getString(2));
@@ -64,6 +91,16 @@ public class AsesoriaDao implements InterfazDao {
 				a.setEspecial(rs.getString(6));
 				a.setVisitaid(rs.getInt(7));
 				listaAsesoria.add(a);
+=======
+				Asesoria ase = new Asesoria();
+				ase.setIdasesoria(rs.getInt(1));
+				ase.setDetalle(rs.getString(2));
+				ase.setGestion(rs.getString(3));
+				ase.setPropuestas(rs.getString(4));
+				ase.setFecha(rs.getString(5));
+				ase.setVisitaid(rs.getInt(6));
+				listaAsesoria.add(ase);
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 			}
 			stm.close();
 			rs.close();
@@ -74,7 +111,11 @@ public class AsesoriaDao implements InterfazDao {
 		}
 		
 		return listaAsesoria;
+<<<<<<< HEAD
 	}
+=======
+}
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 
 	@Override
 	public boolean agregar(Cliente cliente) {
@@ -119,6 +160,15 @@ public class AsesoriaDao implements InterfazDao {
 	}
 
 	@Override
+<<<<<<< HEAD
+=======
+	public List<Asesoria> listarAsesoria() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 	public boolean agregar(Capacitacion capacitacion) {
 		// TODO Auto-generated method stub
 		return false;
@@ -167,7 +217,11 @@ public class AsesoriaDao implements InterfazDao {
 	}
 
 	@Override
+<<<<<<< HEAD
 	public Empleado buscarEmpleado(int empleadoid) {
+=======
+	public Empleado buscarEmpleado(int idempleado) {
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -208,4 +262,8 @@ public class AsesoriaDao implements InterfazDao {
 		return null;
 	}
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 15e1807ae10ab46b69bbdbb1f92180eaf265b8b7

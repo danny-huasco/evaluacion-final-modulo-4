@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+        
     <wb-module deploy-name="evaluacion final mod4">
+                
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+                
         <property name="context-root" value="evaluacion_final_mod4"/>
+                
         <property name="java-output-path" value="/evaluacion final mod4/build/classes"/>
+            
     </wb-module>
+    
 </project-modules>
