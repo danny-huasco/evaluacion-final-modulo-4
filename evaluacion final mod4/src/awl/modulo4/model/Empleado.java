@@ -14,14 +14,17 @@ public class Empleado {
 	}
 
 
+	public Empleado() {
+		// TODO Auto-generated constructor stub
+	}
 
-	public int getIdempleado() {
+
+	public int getIdEmpleado() {
 		return idempleado;
 	}
 
 
-
-	public void setIdempleado(int idempleado) {
+	public void setIdEmpleado(int idempleado) {
 		this.idempleado = idempleado;
 	}
 

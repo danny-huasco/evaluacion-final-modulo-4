@@ -34,7 +34,9 @@ public class EditarCliente extends HttpServlet {
 		
 		int clienteid = Integer.parseInt(request.getParameter("id"));
 		ClienteDao clientedao = new ClienteDao();
-		Cliente cli = clientedao.buscar(clienteid);
+
+		Cliente cli = clientedao.buscarCliente(clienteid);
+
 		request.setAttribute("regcli", cli);
 		request.getRequestDispatcher("EditarCliente.jsp").forward(request, response);
 	}
