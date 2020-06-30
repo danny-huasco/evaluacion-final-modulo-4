@@ -10,16 +10,12 @@ public class Mejora {
 	private int clienteid;
 	
 	
-	
 	public Mejora() {
-		this.idmejora = 0;
-		this.fecha = "01-01-2000";
-		this.motivo = "";
-		this.actividades = "";
-		this.estado = "";
-		this.clienteid = 001;
+
 	}
-	public Mejora(String fecha, String motivo, String actividades, String estado, int clienteid) {
+
+	public Mejora(int idmejora, String fecha, String motivo, String actividades, String estado, int clienteid) {
+		this.idmejora = idmejora;
 		this.fecha = fecha;
 		this.motivo = motivo;
 		this.actividades = actividades;
@@ -106,6 +102,5 @@ public class Mejora {
 		return "Mejora [idmejora=" + idmejora + ", fecha=" + fecha + ", motivo=" + motivo + ", actividades="
 				+ actividades + ", estado=" + estado + ", clienteid=" + clienteid + "]";
 	}
-	
 	
 }

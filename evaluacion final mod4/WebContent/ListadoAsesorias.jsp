@@ -50,7 +50,7 @@
 	</tbody>
 </table>
 <br/>
-	<a href="${pageContext.request.contextPath}/SolicitarAsesoria">Solicitar Asesoria</a>&nbsp;&nbsp;
+	<a href="${pageContext.request.contextPath}/IngresarAsesoria">Ingresar Asesoria</a>&nbsp;&nbsp;
 	<a href="${pageContext.request.contextPath}/index.jsp">Volver al inicio</a>
 </body>
 </html>

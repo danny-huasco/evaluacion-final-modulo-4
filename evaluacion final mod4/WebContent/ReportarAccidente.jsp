@@ -30,13 +30,13 @@
     <!-- Smooth Scroll js -->
     <script src="js/smooth-scroll.min.js"></script>
 
-  <title>Reportar Accidente </title>
+  <title>Reportar Accidente Cliente</title>
 
 </head>
 <body>
 
     <header class="jumbotron text-center" style="margin-bottom:0" id="cabeceracarlos">
-        <h1> Reportar accidente </h1>
+        <h1> Reportar Accidente Cliente</h1>
         <c:if test="${ccmensaje != null}">
 		<h2>
 			<c:out value="${ccmensaje}"></c:out>
@@ -111,7 +111,7 @@
 						
 					</form>
 					
-				<a href="${pageContext.request.contextPath}/ListadoAccidente"> Ir al listado de accidentes </a>
+				<a href="${pageContext.request.contextPath}/index.jsp"> Volver al inicio </a>
 				</div>
 			</div>
 			

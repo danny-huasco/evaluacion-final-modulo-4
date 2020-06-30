@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +10,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="estilos.css">
       <!-- CSS
   ================================================== -->
@@ -35,7 +35,7 @@
 	<h3><c:out value="${ccmensaje}"></c:out></h3>
 	</c:if>
 	
-        <h1> Solicitar Asesoria  </h1>
+        <h1> Solicitar Asesoria Cliente </h1>
        
     </header>
 
@@ -112,7 +112,7 @@
 					
 					
 					
-					<a href="${pageContext.request.contextPath}/ListadoAsesoria"> Volver al listado de Asesorias </a>
+					<a href="${pageContext.request.contextPath}/index.jsp"> Volver al inicio </a>
 				</div>
 			</div> <!-- end row -->
 			
@@ -120,21 +120,16 @@
 	</section> <!-- end section -->
 
 
-   
-
-      <!-- Main jQuery -->
-    <script src="plugins/jquery/dist/jquery.min.js"></script>
+        <!-- Main jQuery -->
+    <script src="js/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="plugins/bootstrap/dist/js/popper.min.js"></script>
-    <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- Owl Carousel -->
-    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/plotly-latest.min.js"></script>
     <!-- Smooth Scroll js -->
-    <script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-    
-    <!-- Custom js -->
-    <script src="js/script.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
   
 
 </body>

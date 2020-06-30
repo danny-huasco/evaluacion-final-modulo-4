@@ -34,8 +34,10 @@ public interface InterfazDao {
 	public List<Mejora> listarMejoras();
 	//pago 
 	public boolean agregar(Pago pago);
+
 	public List<Pago> listarPagos();
 	//visita
 	public boolean agregar(Visita visita);
 	public List<Visita> listarVisita();
 }
+

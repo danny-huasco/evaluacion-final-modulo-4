@@ -7,10 +7,12 @@ public class Pago {
 	private int montoregular;
 	private int montoadicionales;
 	private int idcliente;
-	
-	
-	
-	
+
+
+	public Pago() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public Pago(int idpago, String mesanio, int montoregular, int montoadicionales, int idcliente) {
 		this.idpago = idpago;
 		this.mesanio = mesanio;
@@ -18,15 +20,6 @@ public class Pago {
 		this.montoadicionales = montoadicionales;
 		this.idcliente = idcliente;
 	}
-
-
-
-
-
-	public Pago() {
-		// TODO Auto-generated constructor stub
-	}
-
 
 
 	public int getIdpago() {
@@ -41,13 +34,9 @@ public class Pago {
 	}
 
 
-
-
 	public String getMesanio() {
 		return mesanio;
 	}
-
-
 
 
 	public void setMesanio(String mesanio) {
@@ -55,13 +44,9 @@ public class Pago {
 	}
 
 
-
-
 	public int getMontoregular() {
 		return montoregular;
 	}
-
-
 
 
 	public void setMontoregular(int montoregular) {
@@ -69,20 +54,14 @@ public class Pago {
 	}
 
 
-
-
 	public int getMontoadicionales() {
 		return montoadicionales;
 	}
 
 
-
-
 	public void setMontoadicionales(int montoadicionales) {
 		this.montoadicionales = montoadicionales;
 	}
-
-
 
 
 	public int getIdCliente() {
@@ -91,18 +70,14 @@ public class Pago {
 
 
 
-
 	public void setIdCliente(int idcliente) {
 		this.idcliente = idcliente;
 	}
 
 
-
-
 	@Override
 	public String toString() {
-		return "Pago [idpago=" + idpago + ", mesanio=" + mesanio + ", montoregular=" + montoregular
-				+ ", montoadicional=" + montoadicionales + ", idcliente=" + idcliente + "]";
+		return "Pago [idpago=" + idpago + ", mesanio=" + mesanio + ", montoregular=" + montoregular + ", montoadicionales=" + montoadicionales + ", idcliente=" + idcliente + "]";
 	}
 	
 	

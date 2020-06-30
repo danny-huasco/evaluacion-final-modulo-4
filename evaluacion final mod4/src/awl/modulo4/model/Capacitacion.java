@@ -7,10 +7,7 @@ public class Capacitacion {
 	private String hora;
 	private int numasistentes;
 	private int visitaid;
-	
-	
-	
-	
+
 	public Capacitacion(int idcapacitacion, String fecha, String hora, int numasistentes, int visitaid) {
 		this.idcapacitacion = idcapacitacion;
 		this.fecha = fecha;
@@ -20,13 +17,9 @@ public class Capacitacion {
 	}
 
 
-
-
 	public Capacitacion() {
 		// TODO Auto-generated constructor stub
 	}
-
-
 
 
 	public int getIdcapacitacion() {
@@ -34,12 +27,9 @@ public class Capacitacion {
 	}
 
 
-
-
 	public void setIdcapacitacion(int idcapacitacion) {
 		this.idcapacitacion = idcapacitacion;
 	}
-
 
 
 
@@ -83,13 +73,9 @@ public class Capacitacion {
 	}
 
 
-
-
 	public int getVisitaid() {
 		return visitaid;
 	}
-
-
 
 
 	public void setVisitaid(int visitaid) {

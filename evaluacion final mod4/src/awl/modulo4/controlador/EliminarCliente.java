@@ -53,6 +53,7 @@ public class EliminarCliente extends HttpServlet {
 
 		List<Cliente> listacli = new ArrayList<Cliente>();
 		listacli = clientedao.listarCliente();				
+
 		request.setAttribute("listaclientes", listacli);
 		
 		request.setAttribute("ccmensaje", mensaje);

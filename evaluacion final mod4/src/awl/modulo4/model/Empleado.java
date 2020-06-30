@@ -9,11 +9,9 @@ public class Empleado {
 	
 	
 	public Empleado(String nombreempleado, String especialidad) {
-		//this.idempleado = idempleado;
 		this.nombreempleado = nombreempleado;
 		this.especialidad = especialidad;
 	}
-
 
 
 	public Empleado() {
@@ -21,11 +19,9 @@ public class Empleado {
 	}
 
 
-
 	public int getIdEmpleado() {
 		return idempleado;
 	}
-
 
 
 	public void setIdEmpleado(int idempleado) {

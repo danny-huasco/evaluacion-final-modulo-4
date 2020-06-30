@@ -10,8 +10,7 @@ public class Asesoria {
 	private String especial;
 	private int visitaid;
 	
-	
-	
+
 	public Asesoria(int idasesoria, String detalle, String gestion, String propuestas, String fecha, String especial, int visitaid) {
 		this.idasesoria = idasesoria;
 		this.detalle = detalle;
@@ -22,13 +21,9 @@ public class Asesoria {
 		this.visitaid = visitaid;
 	}
 
-
-
 	public Asesoria() {
 		// TODO Auto-generated constructor stub
 	}
-
-
 
 	public int getIdasesoria() {
 		return idasesoria;

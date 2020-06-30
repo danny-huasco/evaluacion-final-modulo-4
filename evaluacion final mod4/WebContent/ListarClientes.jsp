@@ -1,11 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-    
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
+
 <title>Listado de Clientes</title>
     <!-- CSS Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -17,6 +16,7 @@
     <script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
     <script type="text/javascript" src="js/jquery.dataTables.es.js"></script>
 </head>
+
 <body style="padding: 10px;">
 
 	<h1>Listado de clientes</h1>
@@ -57,5 +57,6 @@
 <br>
 	<a href="${pageContext.request.contextPath}/AgregarCliente">Agregar nuevo cliente</a>&nbsp;&nbsp;
 	<a href="${pageContext.request.contextPath}/index.jsp">Volver al inicio</a>
+
 </body>
 </html>

@@ -22,6 +22,7 @@ public class ClienteDao implements InterfazDao {
 		Connection con = null;
 		
 		String sql = "INSERT INTO Cliente VALUES ('" + cliente.getIdCliente()  + "','" + cliente.getNombre() + "','" + cliente.getTelefono() 
+
 		+ "','" + cliente.getCorreoelectronico() + "','" + cliente.getRubro() + "','"+ cliente.getDireccion() + "')";
 		
 		try {
@@ -84,6 +85,7 @@ public class ClienteDao implements InterfazDao {
 		boolean actualizar = false;
 		
 		String sql = "UPDATE Cliente SET ID = '" + cliente.getIdCliente()  + "', nombre = '" + cliente.getNombre() + "', telefono = '" + cliente.getTelefono() + "', correoelectronico = '" + cliente.getCorreoelectronico() + "', rubro = '" + cliente.getRubro() + "', direccion = '" + cliente.getDireccion() + "' WHERE id = '" + cliente.getIdCliente() + "'";
+
 		
 		try {
 			con = ConexionSingleton.getConnection();
@@ -158,6 +160,7 @@ public class ClienteDao implements InterfazDao {
 		
 		return cli;
 	}
+
 
 	@Override
 	public boolean agregar(Accidente accidente) {
@@ -269,6 +272,7 @@ public class ClienteDao implements InterfazDao {
 
 	@Override
 	public List<Visita> listarVisita() {
+
 		// TODO Auto-generated method stub
 		return null;
 	}
